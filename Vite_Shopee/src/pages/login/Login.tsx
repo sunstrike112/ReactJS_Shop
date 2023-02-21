@@ -35,6 +35,7 @@ export default function Login() {
                   name='password'
                   className='w-full rounded-sm border border-gray-300 p-3 outline-none focus:border-gray-500 focus:shadow-sm'
                   placeholder='Password'
+                  autoComplete='on'
                 />
                 <div className='mt-1 min-h-[1rem] text-sm text-red-600'>Email không hợp lệ</div>
               </div>
