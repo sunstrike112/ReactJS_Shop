@@ -1,5 +1,6 @@
 import React from 'react'
 import { useRoutes } from 'react-router-dom'
+import MainLayout from './layouts/MainLayout'
 import RegisterLayout from './layouts/RegisterLayout'
 import Login from './pages/login'
 import ProductList from './pages/ProductList'
@@ -9,7 +10,11 @@ export default function useRouteElements() {
   const routeElements = useRoutes([
     {
       path: '/',
-      element: <ProductList />
+      element: (
+        <MainLayout>
+          <ProductList />
+        </MainLayout>
+      )
     },
     {
       path: '/login',
