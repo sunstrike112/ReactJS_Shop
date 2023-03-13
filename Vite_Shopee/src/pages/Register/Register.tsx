@@ -5,6 +5,7 @@ import { useContext } from 'react'
 import { useForm } from 'react-hook-form'
 import { Link, useNavigate } from 'react-router-dom'
 import { registerAccount } from 'src/apis/auth.api'
+import Button from 'src/components/Button'
 import { AppContext } from 'src/components/contexts/app.context'
 import Input from 'src/components/Input'
 import { ErrorResponseApi } from 'src/types/utils.type'
@@ -99,9 +100,13 @@ export default function Register() {
                 autoComplete='on'
               />
               <div className='mt-2'>
-                <button className='hover-bg-red-600 w-full bg-red-500 py-4 px-2 text-center text-sm uppercase text-white'>
+                <Button
+                  isLoading={registerAccountMutation.isLoading}
+                  disabled={registerAccountMutation.isLoading}
+                  className='hover-bg-red-600 flex w-full items-center justify-center bg-red-500 py-4 px-2 text-sm uppercase text-white'
+                >
                   Đăng Kí
-                </button>
+                </Button>
               </div>
               <div className='mt-8 flex items-center justify-center'>
                 <span className='text-gray-400'>Bạn đã có tài khoản chưa ?</span>
