@@ -19,10 +19,7 @@ export default function Product({ product }: Props) {
           />
         </div>
         <div className='overflow-hidden p-2'>
-          <div className='min-h-[2rem] text-xs line-clamp-2'>
-            [HÀNG HIỆU] Thắt Lưng Da Nam Khóa Tự Động Cao Cấp Dây Nịt Nam Mặt Xoay Chính Hãng , Phong Cách Hàn Quốc -
-            v77men
-          </div>
+          <div className='min-h-[2rem] text-xs line-clamp-2'>[{product.name}</div>
           <div className='mt-3 flex items-center'>
             <div className='max-w-[50%] truncate text-gray-500 line-through'>
               <span className='text-xs'>₫</span>

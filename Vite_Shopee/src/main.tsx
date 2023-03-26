@@ -5,7 +5,7 @@ import App from 'src/App'
 import './index.css'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import { AppProvider } from './components/contexts/app.context'
+import { AppProvider } from './contexts/app.context'
 
 const queryClient = new QueryClient({
   defaultOptions: {

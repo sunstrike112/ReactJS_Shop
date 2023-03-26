@@ -7,7 +7,7 @@ import ProductList from './pages/ProductList'
 import Register from './pages/Register'
 import ProductDetail from './pages/ProductDetail'
 import Profile from './pages/Profile'
-import { AppContext } from './components/contexts/app.context'
+import { AppContext } from './contexts/app.context'
 import path from './constants/path'
 
 function ProtectedRoute() {
