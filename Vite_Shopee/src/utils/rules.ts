@@ -1,5 +1,6 @@
 import type { RegisterOptions, UseFormGetValues } from 'react-hook-form'
 import * as yup from 'yup'
+import { AnyObject } from 'yup'
 
 type Rules = { [key in 'email' | 'password' | 'confirm_password']?: RegisterOptions }
 
@@ -16,14 +17,13 @@ export const getRules = (getValues?: UseFormGetValues<any>): Rules => ({
     },
     maxLength: {
       value: 160,
-      message: 'Độ dài từ 5-160 ký tự'
+      message: 'Độ dài từ 5 - 160 ký tự'
     },
     minLength: {
       value: 5,
-      message: 'Độ dài từ 5-160 ký tự'
+      message: 'Độ dài từ 5 - 160 ký tự'
     }
   },
-
   password: {
     required: {
       value: true,
@@ -31,14 +31,13 @@ export const getRules = (getValues?: UseFormGetValues<any>): Rules => ({
     },
     maxLength: {
       value: 160,
-      message: 'Độ dài từ 6-160 ký tự'
+      message: 'Độ dài từ 6 - 160 ký tự'
     },
     minLength: {
       value: 6,
-      message: 'Độ dài từ 6-160 ký tự'
+      message: 'Độ dài từ 6 - 160 ký tự'
     }
   },
-
   confirm_password: {
     required: {
       value: true,
@@ -46,11 +45,11 @@ export const getRules = (getValues?: UseFormGetValues<any>): Rules => ({
     },
     maxLength: {
       value: 160,
-      message: 'Độ dài từ 6-160 ký tự'
+      message: 'Độ dài từ 6 - 160 ký tự'
     },
     minLength: {
       value: 6,
-      message: 'Độ dài từ 6-160 ký tự'
+      message: 'Độ dài từ 6 - 160 ký tự'
     },
     validate:
       typeof getValues === 'function'
@@ -58,6 +57,14 @@ export const getRules = (getValues?: UseFormGetValues<any>): Rules => ({
         : undefined
   }
 })
+
+function testPriceMinMax(this: yup.TestContext<AnyObject>) {
+  const { price_max, price_min } = this.parent as { price_min: string; price_max: string }
+  if (price_min !== '' && price_max !== '') {
+    return Number(price_max) >= Number(price_min)
+  }
+  return price_min !== '' || price_max !== ''
+}
 
 export const schema = yup.object({
   email: yup
@@ -73,9 +80,20 @@ export const schema = yup.object({
     .max(160, 'Độ dài từ 6 - 160 ký tự'),
   confirm_password: yup
     .string()
-    .required('Nhập lại Password là bắt buộc')
+    .required('Nhập lại password là bắt buộc')
     .min(6, 'Độ dài từ 6 - 160 ký tự')
     .max(160, 'Độ dài từ 6 - 160 ký tự')
-    .oneOf([yup.ref('password')], 'Nhập lại password không khớp')
+    .oneOf([yup.ref('password')], 'Nhập lại password không khớp'),
+  price_min: yup.string().test({
+    name: 'price-not-allowed',
+    message: 'Giá không phù hợp',
+    test: testPriceMinMax
+  }),
+  price_max: yup.string().test({
+    name: 'price-not-allowed',
+    message: 'Giá không phù hợp',
+    test: testPriceMinMax
+  })
 })
+
 export type Schema = yup.InferType<typeof schema>

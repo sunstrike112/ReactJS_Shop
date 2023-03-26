@@ -29,8 +29,8 @@ export default function Header() {
             renderPopover={
               <div className='relative rounded-sm border border-gray-200 bg-white shadow-md'>
                 <div className='flex flex-col py-2 pr-28 pl-3'>
-                  <button className='py-2 px-3 hover:text-orange'>Tiếng Việt</button>
-                  <button className='py-2 px-3 hover:text-orange'>English</button>
+                  <button className='py-2 px-3 text-left hover:text-orange'>Tiếng Việt</button>
+                  <button className='py-2 px-3 text-left hover:text-orange'>English</button>
                 </div>
               </div>
             }
