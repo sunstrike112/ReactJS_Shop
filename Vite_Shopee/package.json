@@ -29,6 +29,7 @@
     "react-hook-form": "^7.43.1",
     "react-router-dom": "^6.6.1",
     "react-toastify": "^9.1.1",
+    "rollup-plugin-visualizer": "^5.9.0",
     "yup": "0.32.11"
   },
   "devDependencies": {
