@@ -29,7 +29,7 @@
     "react-hook-form": "^7.43.1",
     "react-router-dom": "^6.6.1",
     "react-toastify": "^9.1.1",
-    "yup": "^1.0.0"
+    "yup": "0.32.11"
   },
   "devDependencies": {
     "@types/dompurify": "^3.0.0",
