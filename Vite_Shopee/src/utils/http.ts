@@ -3,13 +3,13 @@ import { toast } from 'react-toastify'
 import HttpStatusCode from 'src/constants/httpStatusCode.enum'
 import path from 'src/constants/path'
 import { AuthResponse } from 'src/types/auth.type'
-import { clearLS, setAccessTokenToLS, getAcessTokenFromLS, setProfileToLS } from './auth'
+import { clearLS, setAccessTokenToLS, getAccessTokenFromLS, setProfileToLS } from './auth'
 
 class Http {
   instance: AxiosInstance
   private accessToken: string
   constructor() {
-    this.accessToken = getAcessTokenFromLS()
+    this.accessToken = getAccessTokenFromLS()
     this.instance = axios.create({
       baseURL: 'https://api-ecom.duthanhduoc.com/',
       timeout: 10000,
