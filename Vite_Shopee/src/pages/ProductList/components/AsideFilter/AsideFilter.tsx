@@ -4,13 +4,14 @@ import Button from 'src/components/Button'
 import InputNumber from 'src/components/InputNumber'
 import path from 'src/constants/path'
 import { Category } from 'src/types/category.type'
-import { QueryConfig } from 'src/hooks/useQueryConfig'
 import { useForm, Controller } from 'react-hook-form'
 import { Schema, schema } from 'src/utils/rules'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { NoUndefinedField } from 'src/types/utils.type'
 import RatingStars from '../RatingStars'
 import { omit } from 'lodash'
+import { QueryConfig } from 'src/hooks/useQueryConfig'
+import InputV2 from 'src/components/InputV2'
 
 interface Props {
   queryConfig: QueryConfig
@@ -20,8 +21,8 @@ interface Props {
 type FormData = NoUndefinedField<Pick<Schema, 'price_max' | 'price_min'>>
 /**
  * Rule validate
- * If have price_min and price_max ==> price_max >= price_min
- * Otherwise, there is price_min, there is no price_max and vice versa
+ * Nếu có price_min và price_max thì price_max >= price_min
+ * Còn không thì có price_min thì không có price_max và ngược lại
  */
 
 const priceSchema = schema.pick(['price_min', 'price_max'])
@@ -156,6 +157,18 @@ export default function AsideFilter({ queryConfig, categories }: Props) {
                 )
               }}
             />
+            {/* <InputV2
+              control={control}
+              name='price_min'
+              type='number'
+              className='grow'
+              placeholder='₫ TỪ'
+              classNameInput='p-1 w-full outline-none border border-gray-300 focus:border-gray-500 rounded-sm focus:shadow-sm'
+              classNameError='hidden'
+              onChange={() => {
+                trigger('price_max')
+              }}
+            /> */}
 
             <div className='mx-2 mt-2 shrink-0'>-</div>
             <Controller
