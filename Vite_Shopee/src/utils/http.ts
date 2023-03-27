@@ -1,9 +1,9 @@
-import axios, { AxiosInstance, AxiosError } from 'axios'
-import { toast } from 'react-toastify'
+import axios, { AxiosError, type AxiosInstance } from 'axios'
 import HttpStatusCode from 'src/constants/httpStatusCode.enum'
-import path from 'src/constants/path'
+import { toast } from 'react-toastify'
 import { AuthResponse } from 'src/types/auth.type'
-import { clearLS, setAccessTokenToLS, getAccessTokenFromLS, setProfileToLS } from './auth'
+import { clearLS, getAccessTokenFromLS, setAccessTokenToLS, setProfileToLS } from './auth'
+import path from 'src/constants/path'
 
 class Http {
   instance: AxiosInstance
@@ -17,7 +17,6 @@ class Http {
         'Content-Type': 'application/json'
       }
     })
-
     this.instance.interceptors.request.use(
       (config) => {
         if (this.accessToken && config.headers) {
@@ -30,13 +29,13 @@ class Http {
         return Promise.reject(error)
       }
     )
-
+    // Add a response interceptor
     this.instance.interceptors.response.use(
       (response) => {
         const { url } = response.config
         if (url === path.login || url === path.register) {
           const data = response.data as AuthResponse
-          this.accessToken = (response.data as AuthResponse).data.access_token
+          this.accessToken = data.data.access_token
           setAccessTokenToLS(this.accessToken)
           setProfileToLS(data.data.user)
         } else if (url === path.logout) {
@@ -51,6 +50,10 @@ class Http {
           const data: any | undefined = error.response?.data
           const message = data.message || error.message
           toast.error(message)
+        }
+        if (error.response?.status === HttpStatusCode.Unauthorized) {
+          clearLS()
+          // window.location.reload()
         }
         return Promise.reject(error)
       }
