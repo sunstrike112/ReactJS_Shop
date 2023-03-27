@@ -1,12 +1,9 @@
 import { useQuery } from '@tanstack/react-query'
 import { useContext } from 'react'
-import { createSearchParams, Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import path from 'src/constants/path'
 import { AppContext } from 'src/contexts/app.context'
-import useQueryConfig from 'src/hooks/useQueryConfig'
 import Popover from '../Popover'
-import { yupResolver } from '@hookform/resolvers/yup'
-import { omit } from 'lodash'
 import { purchasesStatus } from 'src/constants/purchase'
 import purchaseApi from 'src/apis/purchase.api'
 import noproduct from 'src/assets/images/no-product.png'
@@ -31,6 +28,7 @@ export default function Header() {
   })
 
   const purchasesInCart = purchasesInCartData?.data.data
+
   return (
     <div className='bg-[linear-gradient(-180deg,#f53d2d,#f63)] pb-5 pt-2 text-white'>
       <div className='container'>
