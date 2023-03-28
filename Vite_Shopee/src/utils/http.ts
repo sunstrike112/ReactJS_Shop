@@ -1,4 +1,4 @@
-import axios, { AxiosError, InternalAxiosRequestConfig, type AxiosInstance } from 'axios'
+import axios, { InternalAxiosRequestConfig, AxiosError, type AxiosInstance } from 'axios'
 import HttpStatusCode from 'src/constants/httpStatusCode.enum'
 import { toast } from 'react-toastify'
 import { AuthResponse, RefreshTokenReponse } from 'src/types/auth.type'
@@ -22,7 +22,7 @@ import { ErrorResponse } from 'src/types/utils.type'
 // Refresh Token mới cho me: 5 - 6
 // Gọi lại Me: 6
 
-class Http {
+export class Http {
   instance: AxiosInstance
   private accessToken: string
   private refreshToken: string
@@ -36,8 +36,8 @@ class Http {
       timeout: 10000,
       headers: {
         'Content-Type': 'application/json',
-        'expire-access-token': 5, // 10 giây
-        'expire-refresh-token': 60 * 60 // 1 giờ
+        'expire-access-token': 60 * 60 * 24, // 1 ngày
+        'expire-refresh-token': 60 * 60 * 24 * 160 // 160 ngày
       }
     })
     this.instance.interceptors.request.use(
@@ -92,7 +92,6 @@ class Http {
           const { url } = config
           // Trường hợp Token hết hạn và request đó không phải là của request refresh token
           // thì chúng ta mới tiến hành gọi refresh token
-          console.log(config)
           if (isAxiosExpiredTokenError(error) && url !== URL_REFRESH_TOKEN) {
             // Hạn chế gọi 2 lần handleRefreshToken
             this.refreshTokenRequest = this.refreshTokenRequest
