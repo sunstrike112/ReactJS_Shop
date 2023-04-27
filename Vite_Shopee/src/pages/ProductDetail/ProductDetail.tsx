@@ -12,6 +12,8 @@ import { Product as ProductType, ProductListConfig } from 'src/types/product.typ
 import { formatCurrency, formatNumberToSocialStyle, getIdFromNameId, rateSale } from 'src/utils/utils'
 import Product from '../ProductList/components/Product'
 import path from 'src/constants/path'
+import { Helmet } from 'react-helmet';
+import { convert } from 'html-to-text'
 
 export default function ProductDetail() {
   const queryClient = useQueryClient()
@@ -123,6 +125,17 @@ export default function ProductDetail() {
       <div className='container'>
         <div className='bg-white p-4 shadow'>
           <div className='grid grid-cols-12 gap-9'>
+            <Helmet>
+              <title>{product.name} | Shopee Clone</title>
+              <meta
+                name='description'
+                content={convert(product.description, {
+                  limits: {
+                    maxInputLength: 150
+                  }
+                })}
+              />
+            </Helmet>
             <div className='col-span-5'>
               <div
                 className='relative w-full cursor-zoom-in overflow-hidden pt-[100%] shadow'
