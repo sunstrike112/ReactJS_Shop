@@ -1,9 +1,7 @@
 import { screen, waitFor, fireEvent } from '@testing-library/react'
 import path from 'src/constants/path'
-import { logScreen, renderWithRouter } from 'src/utils/testUtils'
+import { renderWithRouter } from 'src/utils/testUtils'
 import { beforeAll, describe, expect, it } from 'vitest'
-import matchers from '@testing-library/jest-dom/matchers'
-expect.extend(matchers)
 
 describe('Login', () => {
   let emailInput: HTMLInputElement
@@ -61,7 +59,6 @@ describe('Login', () => {
       expect(screen.queryByText('Độ dài từ 6 - 160 ký tự')).toBeFalsy()
     })
     fireEvent.submit(submitButton)
-    await logScreen()
     await waitFor(() => {
       expect(document.querySelector('title')?.textContent).toBe('Trang chủ | Shopee Clone')
     })
