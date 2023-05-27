@@ -147,7 +147,7 @@ export default function ProductDetail() {
                 <img
                   src={activeImage}
                   alt={product.name}
-                  className=' absolute top-0 left-0 h-full w-full bg-white object-cover'
+                  className='absolute top-0 left-0 h-full w-full bg-white object-cover'
                   ref={imageRef}
                 />
               </div>

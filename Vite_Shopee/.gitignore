@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 coverage/
+__snapshots__/
 stats.html
 # Editor directories and files
 .vscode/*
