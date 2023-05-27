@@ -8,7 +8,6 @@ expect.extend(matchers)
 describe('Login', () => {
   beforeAll(async () => {
     renderWithRouter({ route: path.login })
-    // await logScreen()
     await waitFor(() => {
       expect(screen.queryByPlaceholderText('Email')).toBeInTheDocument()
     })
