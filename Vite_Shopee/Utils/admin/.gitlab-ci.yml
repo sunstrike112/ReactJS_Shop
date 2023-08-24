@@ -1,0 +1,143 @@
+stages:
+  - prepare
+  - build
+
+install_dependence:
+  stage: prepare
+  script:
+    - yarn
+  cache:
+    paths:
+      - ./node_modules
+    key: ${CI_COMMIT_REF_SLUG}
+    policy: push
+  only:
+    refs:
+      - develop
+    changes:
+      - package.json
+      - yarn.lock
+  tags:
+    - DEV
+
+build-develop:
+  stage: build
+  cache:
+    paths:
+      - ./node_modules
+    key: ${CI_COMMIT_REF_SLUG}
+    policy: pull
+  script:
+    - cp .env.example .env
+    - sed -i "s~CI_API_URL~$CI_DEV_API_URL~g" .env
+    - sed -i "s~CI_CD_USER_URL~$CI_DEV_USER_URL~g" .env
+    - sed -i "s~CI_REACT_APP_ROBOT_PAYMENT_STORE_ID~$CI_REACT_APP_ROBOT_PAYMENT_STORE_ID~g" .env
+    - sed -i "s~CI_REACT_APP_DOWNLOAD_CSV~$CI_DEV_REACT_APP_DOWNLOAD_CSV~g" .env
+    - sed -i "s~CI_REACT_APP_DOWNLOAD_SHIFT_JIS~$CI_DEV_REACT_APP_DOWNLOAD_SHIFT_JIS~g" .env
+    - sed -i "s~CI_REACT_APP_S3_DOMAIN~$CI_DEV_REACT_APP_S3_DOMAIN~g" .env
+    - sed -i "s~CI_CD_S3_PDF_URL~$CI_CD_DEV_S3_PDF_URL~g" .env
+    - sed -i "s~CI_REACT_APP_S3_BUCKET_NAME~$CI_DEV_REACT_APP_S3_BUCKET_NAME~g" .env
+    - sed -i "s~CI_REACT_APP_S3_BUCKET_PDF_NAME~$CI_DEV_REACT_APP_S3_BUCKET_PDF_NAME~g" .env
+    - cat .env
+    - yarn build
+    - sudo rsync -hrvzgo --chown=centos:centos --exclude=.git --delete $CI_PROJECT_DIR/ /srv/admin/
+    - aws s3 sync --cache-control 'max-age=604800' --exclude index.html build/ s3://nsk-dev-web/admin/ --delete
+    - aws s3 sync --cache-control 'no-cache' build/ s3://nsk-dev-web/admin/
+    - aws cloudfront create-invalidation --distribution-id $CI_DEV_CLOUDFONT_ID --paths '/*'
+
+  only:
+    - develop
+  tags:
+    - DEV
+
+#################
+install_dependence_staging:
+  stage: prepare
+  script:
+    - yarn
+  cache:
+    paths:
+      - ./node_modules
+    key: ${CI_COMMIT_REF_SLUG}
+    policy: push
+  only:
+    refs:
+      - staging
+    changes:
+      - package.json
+      - yarn.lock
+  tags:
+    - STG
+
+
+build-staging:
+  stage: build
+  cache:
+    paths:
+      - ./node_modules
+    key: ${CI_COMMIT_REF_SLUG}
+    policy: pull
+  script:
+    - cp .env.example .env
+    - sed -i "s~CI_API_URL~$CI_STG_API_URL~g" .env
+    - sed -i "s~CI_CD_USER_URL~$CI_STG_USER_URL~g" .env
+    - sed -i "s~CI_REACT_APP_ROBOT_PAYMENT_STORE_ID~$CI_STG_REACT_APP_ROBOT_PAYMENT_STORE_ID~g" .env
+    - sed -i "s~CI_REACT_APP_DOWNLOAD_CSV~$CI_STG_REACT_APP_DOWNLOAD_CSV~g" .env
+    - sed -i "s~CI_REACT_APP_DOWNLOAD_SHIFT_JIS~$CI_STG_REACT_APP_DOWNLOAD_SHIFT_JIS~g" .env
+    - sed -i "s~CI_REACT_APP_S3_DOMAIN~$CI_STG_REACT_APP_S3_DOMAIN~g" .env
+    - sed -i "s~CI_CD_S3_PDF_URL~$CI_CD_STG_S3_PDF_URL~g" .env
+    - yarn build
+    - sudo rsync -hrvzgo --chown=centos:centos --exclude=.git --delete $CI_PROJECT_DIR/ /srv/admin/
+    - aws s3 sync --cache-control 'max-age=604800' --exclude index.html build/ $CI_STG_S3_WEB/admin/ --delete
+    - aws s3 sync --cache-control 'no-cache' build/ $CI_STG_S3_WEB/admin/
+    - aws cloudfront create-invalidation --distribution-id $CI_STG_CLOUDFONT_ID --paths '/*'
+
+  only:
+    - staging
+  tags:
+    - STG
+##########
+install_dependence_production:
+  stage: prepare
+  script:
+    - npm install
+  cache:
+    paths:
+      - ./node_modules
+    key: ${CI_COMMIT_REF_SLUG}
+    policy: push
+  only:
+    refs:
+      - master
+    changes:
+      - package.json
+      - package-lock.json
+  tags:
+    - PRO
+
+
+build-production:
+  stage: build
+  cache:
+    paths:
+      - ./node_modules
+    key: ${CI_COMMIT_REF_SLUG}
+    policy: pull
+  script:
+    - cp .env.example .env
+    - sed -i "s~CI_API_URL~$CI_PRO_API_URL~g" .env
+    - sed -i "s~CI_CD_USER_URL~$CI_PRO_USER_URL~g" .env
+    - sed -i "s~CI_REACT_APP_ROBOT_PAYMENT_STORE_ID~$CI_PRO_REACT_APP_ROBOT_PAYMENT_STORE_ID~g" .env
+    - sed -i "s~CI_REACT_APP_DOWNLOAD_CSV~$CI_PRO_REACT_APP_DOWNLOAD_CSV~g" .env
+    - sed -i "s~CI_REACT_APP_DOWNLOAD_SHIFT_JIS~$CI_PRO_REACT_APP_DOWNLOAD_SHIFT_JIS~g" .env
+    - npm run build
+    #- sudo rsync -hrvzgo --chown=centos:centos --exclude=.git --delete $CI_PROJECT_DIR/ /srv/admin/
+    - aws s3 sync --cache-control 'max-age=604800' --exclude index.html build/ $CI_PRO_S3_WEB/admin/ --delete
+    - aws s3 sync --cache-control 'no-cache' build/ $CI_PRO_S3_WEB/admin/
+    - aws cloudfront create-invalidation --distribution-id $CI_PRO_CLOUDFONT_ID --paths '/*'
+
+  only:
+    - master
+  tags:
+    - PRO
+

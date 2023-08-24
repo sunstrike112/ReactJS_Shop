@@ -1,0 +1,37 @@
+{
+	"common": {
+		"seminar_title": "タイトル",
+		"public": "公開する",
+		"private": "公開しない",
+		"all": "すべて",
+		"nissoken_only": "日創研のみ",
+		"company_only": "企業のみ",
+		"nissoken": "ジョブナレ",
+		"seminar_title_input": "セミナータイトル",
+		"live_link": "配信リンク",
+		"live_password": "パスワード",
+		"start_date": "開始日時",
+		"end_date": "終了日時",
+		"photo_setting": "写真設定",
+		"public_setting": "公開設定",
+		"description": "セミナー説明",
+		"company_name": "企業名"
+	},
+	"create": {
+		"title": "セミナー登録"
+	},
+	"edit": {
+		"title": "セミナー変更"
+	},
+	"management": {
+		"title": "セミナー一覧",
+		"public_status": "公開状態",
+		"Belonging": "所属",
+		"create_seminar": "新しいセミナーを登録する",
+
+		"delete_line_1": "選択されたセミナーを{{number}}件まとめて削除しますか？"
+	},
+	"validation": {
+		"range_date": "閉講日時が開講日時以前に指定されています。"
+	}
+}

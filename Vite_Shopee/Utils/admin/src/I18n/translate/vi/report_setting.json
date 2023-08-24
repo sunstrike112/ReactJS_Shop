@@ -1,0 +1,37 @@
+{
+	"title": "Thiết lập xuất bản báo cáo của mọi người (tìm kiếm)",
+	"publish_other_students": "Xuất bản các học sinh khác",
+	"publish": "Công bố",
+	"do_not_publish": "Không xuất bản",
+	"everyone_report_setting": "thiết lập báo cáo xuất bản của mọi người",
+	"back_report_details": "Quay về chi tiết báo cáo",
+	"create_report": {
+		"title": "Tạo báo cáo"
+	},
+	"detail": {
+		"title": "Chi tiết báo cáo",
+		"overview": "Khái quát",
+		"report_overview": "Khái quát báo cáo",
+		"attach_file": "Ảnh/ file đính kèm dùng để giải thích",
+		"question_to_set": "Câu hỏi sẽ ra",
+		"image_explain": "Ảnh dùng để giải thích",
+		"file_explain": "File đính kèm dùng để giải thích",
+		"handle_change_question": "Xử lý thay đổi câu hỏi",
+		"question_are_setting": "Đã cài đặt {{ number }} câu hỏi."
+	},
+	"register": {
+		"title": "Đăng ký báo cáo câu hỏi",
+		"back_report_question_list": "Quay lại danh sách câu hỏi báo cáo",
+		"limit_character": "Để hạn chế các câu trả lời sử dụng số ký tự",
+		"show_modal_answer": "Hiện mô hình câu trả lời",
+		"modal_answer": "Mô hình câu trả lời",
+		"confirm": "Bạn có muốn đăng ký Báo cáo Câu hỏi không?"
+	},
+	"edit": {
+		"title": "Thay đổi câu hỏi báo cáo",
+		"confirm": "Thay đổi Báo cáo Câu hỏi được chứ ?"
+	},
+	"publish_setting": {
+		"title": "Thiết lập xuất bản báo cáo của mọi người"
+	}
+}

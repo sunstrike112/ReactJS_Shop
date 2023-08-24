@@ -1,0 +1,76 @@
+{
+	"course_management": "チャンネル管理",
+	"block_course_title": "チャンネル",
+	"registration_course_categories": "チャンネルカテゴリの登録・管理",
+	"registration_courses": "チャンネルの登録・管理",
+	"unit_settings": "番組の登録",
+	"upload_file": "番組のアップロード",
+	"registration_certificates": "修了証書の登録・管理",
+	"auto_assignment": "自動割り当て（チャンネル）の設定",
+	"test_question": "テスト問題の管理",
+	"teaching_materials": "教材の作成・管理",
+	"report_publishing": "みんなのレポート公開設定の検索",
+	"attendance_permissions": "受講権限",
+	"issus_permission": "受講権限の発行",
+	"issue_status_permissions": "受講権限の発行状態",
+	"bulk_issue_permission": "受講権限の一括発行・変更（CSV）",
+	"course_type": " チャンネルタイプ",
+	"views": "閲覧回数",
+	"like": "いいね回数",
+	"registration_course": {
+		"publish_course_option": { "public": "公開", "private": "非公開" },
+		"paid_course_option": { "free": "無料", "paid": "有料" },
+		"owner_option": {
+			"all": "全て",
+			"company": "契約企業",
+			"nissoken": "ジョブナレ"
+		},
+		"management": {
+			"title": "チャンネルの登録・管理",
+			"delete_dialog_title": "まとめて削除する",
+			"message_confirm_delete": "選択されたチャンネル{{amount}}件をまとめて削除しますか？チャンネルを削除すると、チャンネルの受講履歴も削除され、復元できなくなります。",
+			"course_category_name": "チャンネルカテゴリ名",
+			"course_name": "チャンネル名",
+			"owner": "チャンネルオーナー",
+			"create_button": "チャンネルを登録する",
+			"sort_button": "並び順を更新する",
+			"delete_button": "まとめて削除する",
+			"selected_courses": "{{amount}}件選択中",
+			"total_courses": "全{{amount}}件",
+			"course_type": "無料 /有料",
+			"price": "金額",
+			"action": "操作",
+			"search_button": "この条件で検索する"
+		},
+		"sort": {
+			"title": "並び順を更新する",
+			"index": "No.",
+			"sort": "変更する",
+			"courseName": "チャンネル名"
+		},
+		"create": {
+			"title": "新しいチャンネルの登録",
+			"course_name": "チャンネル",
+			"course_category_name": "チャンネルカテゴリ",
+			"overview": "概要",
+			"course_image": "チャンネル画像 ",
+			"public_setting": "公開設定",
+			"course_type": "無料 / 有料",
+			"price": "金額",
+			"create_submit": "登録する",
+			"warning_submit_message": "チャンネルを登録してもよろしいですか?"
+		},
+		"edit": {
+			"title": "チャンネルを変更する",
+			"course_name": "チャンネル",
+			"course_category_name": "チャンネルカテゴリ名",
+			"overview": "概要",
+			"course_image": "チャンネル画像 ",
+			"public_setting": "公開/ 非公開",
+			"course_type": "無料 / 有料",
+			"price": "金額",
+			"edit_submit": "変更する",
+			"warning_submit_message": "編集してもよろしいですか?"
+		}
+	}
+}

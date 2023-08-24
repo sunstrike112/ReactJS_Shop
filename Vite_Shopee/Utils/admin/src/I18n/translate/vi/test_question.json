@@ -1,0 +1,37 @@
+{
+	"back_to_question": "Quay về cài đặt ra đề",
+	"back_to_test_question_management": "Quay lại quản lý câu hỏi kiểm tra",
+	"test_question_detail": "Chi tiết câu hỏi bài kiểm tra",
+	"options": {
+		"optional": "Tùy ý",
+		"required": "Bắt buộc",
+		"single_choice": "Chọn một",
+		"multiple_choice": "Chọn nhiều",
+		"description": "Kiểu mô tả"
+	},
+	"create": {
+		"title": "Đăng ký câu hỏi bài kiểm tra",
+		"optional_or_required_answer": "Tùy ý/Bắt buộc trả lời",
+		"question_type": "Loại câu hỏi",
+		"question_text": "Nội dung câu hỏi",
+		"choice_number": "Tùy chọn {{number}}",
+		"correct_answer": "Đúng",
+		"remark": "Ghi chú",
+		"correct_answer_number": "Đúng {{number}}",
+		"warning_submit_message": "Bạn có muốn đăng ký Câu hỏi bài kiểm tra không?",
+		"restrict": "Hạn chế",
+		"un_restrict": "Không hạn chế",
+		"show": "Hiển thị",
+		"un_show": "Ẩn giấu",
+		"explanation": "Giải thích",
+		"hint": "Gợi ý"
+	},
+	"edit": {
+		"title": "Thay đổi vấn đề kiếm tra",
+		"warning_submit_message": "Thay đổi Câu hỏi bài kiểm tra được chứ?"
+	},
+	"validation": {
+		"file_required": "Có thể đính kèm tệp hình ảnh (jpg, gif, png) và tệp âm thanh (mp3), tệp video (mp4) 20 MB trở xuống",
+		"image_required": "4 MB trở xuống. Có thể đính kèm tệp hình ảnh (jpg, gif, png)."
+	}
+}

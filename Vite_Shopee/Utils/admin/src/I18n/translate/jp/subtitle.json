@@ -1,0 +1,12 @@
+{
+	"title": "字幕設定",
+	"add_subtitle": "字幕を追加する",
+	"delete_subtitle": "字幕を削除する",
+	"video_name": "ビデオ名: ",
+	"save_preview": "保存してプレビューする",
+	"save": "保存",
+	"back": "戻る",
+	"insert_row_above": "上に字幕を1つ挿入",
+	"tip_guideline": "下/上キーの組み合わせまたはマウスホイールを使用して時間を調整します",
+	"leave_confirm": "このページを閉じますか。閉じる場合、すべてデータが保存させません。"
+}

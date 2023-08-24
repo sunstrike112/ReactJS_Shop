@@ -1,0 +1,18 @@
+{
+	"contact_management": "連絡管理",
+	"news_and_surveys": "お知らせ・アンケート",
+	"publication_of_news": "お知らせ（アンケート）の掲載",
+	"announcements_list": "お知らせ（アンケート）の一覧・結果CSVダウンロード",
+	"view_and_answer": "ユーザー別 お知らせ（アンケート）の閲覧・回答状況",
+	"auto_assignment": "自動割り当て（お知らせ）の設定",
+	"contact_email": "メール",
+	"compose_email": "メールの作成",
+	"sent_email_history": "メールの送信履歴",
+	"email_template": "メールテンプレートの管理",
+	"edit_signature": "署名の編集",
+	"contact_announcements": "アナウンス",
+	"publication_and_management_announcements": "アナウンスの掲載・管理",
+	"contact_automatic_email": "自動メール",
+	"automatic_email_settings": "自動メール設定の一覧",
+	"register_automatic_email": "自動メール設定の作成"
+}

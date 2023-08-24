@@ -1,0 +1,48 @@
+{
+	"title": "企業管理",
+	"company_name": "企業名",
+	"registration_date": "登録日",
+	"expiration_date": "利用期限",
+	"last_login_date": "最終ログイン日",
+	"contract_plan": "契約プラン",
+	"company_status": "ステータス",
+	"data_capacity": "データ容量",
+	"number_of_user": "ユーザー数",
+	"register_company": "企業を登録する",
+	"plan": "プラン",
+	"user_using": "{{ userIsUsing }}人/{{ totalUser }}人",
+	"data_using": "{{ dataUsing }}/{{ totalData }}",
+	"TRIAL": "トライアル",
+	"CANCELLATION": "キャンセル",
+	"USING": "本契約",
+	"STOPPING": "停止中",
+	"SUBSCRIBE": "申込",
+	"access_company": "アクセス企業",
+	"target_access_company": "対象者選択",
+	"company_type": "企業タイプ",
+	"list_company": "企業一覧",
+	"select_company": "企業選択",
+	"warning_delete_message": "この会社を削除してもよろしいですか。",
+	"warning_refused_message": "この会社を承認待ちリストに戻してもよろしいですか。",
+	"download_csv": "CSVをダウンロード",
+	"delete_btn": "戻す",
+	"USING_WORKSPACE": "本契約とワークスペース",
+	"waiting": {
+		"title": "承認待ちのリスト",
+		"reviewAndApproveChanges": "変更内容を確認し、承認する",
+		"warning_approve_and_refused_message": "実行してもよろしいでしょうか。",
+		"saveChangesAndPutThemOnHold": "変更内容を一旦保存し、保留にする",
+		"duplication": "重複",
+		"refusedList": "拒否リスト",
+		"reserve": "保留",
+		"canBeRefused": "あり",
+		"canBeDuplicated": "あり",
+		"companyCodeSeraku": "マイページ側の企業コード"
+	},
+	"waiting_detail": {
+		"title": "企業情報"
+	},
+	"refused": {
+		"title": "拒否リスト"
+	}
+}

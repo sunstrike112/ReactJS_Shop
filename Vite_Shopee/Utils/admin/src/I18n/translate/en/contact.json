@@ -1,0 +1,18 @@
+{
+	"contact_management": "Communication management",
+	"news_and_surveys": "News and surveys",
+	"publication_of_news": "Publication of news (surveys)",
+	"announcements_list": "Announcements (questionnaire) List and results CSV Download",
+	"view_and_answer": "View and answer status of user-specific announcements (questionnaire)",
+	"auto_assignment": "Auto assignment (notification) settings",
+	"contact_email": "Email",
+	"compose_email": "Compose email",
+	"sent_email_history": "Sent email history",
+	"email_template": "Email template management",
+	"edit_signature": "Edit signature",
+	"contact_announcements": "Announcements",
+	"publication_and_management_announcements": "Publication and management of announcements",
+	"contact_automatic_email": "Automatic email",
+	"automatic_email_settings": "Automatic email settings list",
+	"register_automatic_email": "Register automatic email settings"
+}

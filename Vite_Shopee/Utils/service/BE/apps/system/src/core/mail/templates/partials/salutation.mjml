@@ -1,0 +1,8 @@
+<mj-section background-color="#356cc7" padding-bottom="0px" padding-top="0">
+  <mj-column width="100%">
+    <mj-text align="center" font-size="13px" color="#ABCDEA" font-family="Ubuntu, Helvetica, Arial, sans-serif" padding-left="25px" padding-right="25px" padding-bottom="18px" padding-top="28px">HELLO
+      <p style="font-size:16px; color:white">{{name}}</p>
+    </mj-text>
+    <mj-divider border-color="#ffffff" border-width="2px" border-style="solid" padding-left="20px" padding-right="20px" padding-bottom="0px" padding-top="0"></mj-divider>
+  </mj-column>
+</mj-section>

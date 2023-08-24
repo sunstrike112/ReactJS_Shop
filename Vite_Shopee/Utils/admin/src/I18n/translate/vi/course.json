@@ -1,0 +1,79 @@
+{
+	"course_management": "Quản lý khóa học",
+	"block_course_title": "Khóa học",
+	"registration_course_categories": "Đăng ký/ Quản lý danh mục khóa học",
+	"registration_courses": "Đăng ký/ Quản lý khóa học",
+	"unit_settings": "Cài đặt bài học",
+	"upload_file": "Tải lên file dùng cho khóa học",
+	"registration_certificates": "Đăng ký/ Quản lý giấy chứng nhận hoàn thành",
+	"auto_assignment": "Tự động gán (khóa học) cài đặt",
+	"test_question": "Quản lý câu hỏi bài kiểm tra",
+	"teaching_materials": "Tạo và quản lý các tài liệu giảng dạy",
+	"report_publishing": "thiết lập xuất bản báo cáo của mọi người (tìm kiếm)",
+	"attendance_permissions": "Quyền tham gia khóa học",
+	"issus_permission": "Phát hành quyền tham gia học",
+	"issue_status_permissions": "Trạng thái cấp quyền tham gia",
+	"bulk_issue_permission": "Phát hành/thay đổi 1 loạt quyền tham gia học (CSV)",
+	"course_type": "Loại khoá học",
+	"views": "Số lượt xem",
+	"like": "Số lượt thích",
+	"registration_course": {
+		"publish_course_option": {
+			"public": "Công khai",
+			"private": "Riêng tư"
+		},
+		"paid_course_option": { "free": "Miễn phí", "paid": "Có phí" },
+		"owner_option": {
+			"all": "Tất cả",
+			"company": "Công ty thành viên",
+			"nissoken": "Công ty ジョブナレ"
+		},
+		"management": {
+			"title": "Danh sách khoá học",
+			"delete_dialog_title": "Tổng hợp rồi xóa",
+			"message_confirm_delete": "Có tập hợp lại và xóa {{amount}} khóa học đã được chọn không? Nếu bạn xóa khóa học , lịch sử tham dự khóa học cũng sẽ bị xóa và không thể được khôi phục.",
+			"course_category_name": "Tên danh mục khóa học",
+			"course_name": "Tên khoá học",
+			"owner": "Chủ sở hữu khoá học",
+			"create_button": "Tạo khoá học",
+			"sort_button": "Cập nhật thứ tự sắp xếp",
+			"delete_button": "Tổng hợp rồi xóa",
+			"selected_courses": "{{amount}} bản ghi đã chọn",
+			"total_courses": "Tổng cộng {{amount}} bản ghi",
+			"course_type": "Miễn phí / có phí",
+			"price": "Giá",
+			"action": "Tác vụ",
+			"search_button": "Hiển thị bằng điều kiện này"
+		},
+		"sort": {
+			"title": "Cập nhập thứ tự",
+			"index": "No.",
+			"sort": "Sắp xếp",
+			"courseName": "Tên khoá học"
+		},
+		"create": {
+			"title": "Tạo mới khoá học",
+			"course_name": "Khóa học",
+			"course_category_name": "Danh mục khóa học",
+			"overview": "Khái quát ",
+			"course_image": "Ảnh khóa học",
+			"public_setting": "Công khai / riêng tư",
+			"course_type": "Miễn phí / có phí",
+			"price": "Giá",
+			"create_submit": "Đăng ký",
+			"warning_submit_message": "Bạn có muốn đăng ký Khóa học không?"
+		},
+		"edit": {
+			"title": "Thay đổi khóa học",
+			"course_name": "Khóa học",
+			"course_category_name": "Danh mục khóa học",
+			"overview": "Khái quát ",
+			"course_image": "Ảnh khóa học",
+			"public_setting": "Công khai / riêng tư",
+			"course_type": "Miễn phí / có phí",
+			"price": "Giá",
+			"edit_submit": "Cập nhập",
+			"warning_submit_message": "Có chắc muốn thực hiện tác vụ này?"
+		}
+	}
+}

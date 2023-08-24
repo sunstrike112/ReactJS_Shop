@@ -1,0 +1,87 @@
+{
+  "options": {
+		"optional": "任意",
+		"required": "必須",
+		"request_password": "要求する",
+		"not_request_password": "要求しない"
+  },
+  "common": {
+    "course_start_date": "開講日時",
+		"course_end_date": "閉講日時",
+		"optional_required": "受講の任意/必須",
+		"course": "チャンネル",
+    "request_password": "パスワードの要求",
+		"search": "検索",
+    "no_category": "カテゴリなし",
+    "select": "選択",
+    "items_select_number": "{{number}}件選択中",
+    "target_student": "受講対象者",
+    "select_recipients": "対象者を選択する",
+    "persons_select_number": "{{number}}人選択しています。",
+    "current_select": "現在対象に追加されているユーザーはクリアし、再選択します。",
+    "reselect_recipients": "対象者を再選択する",
+    "issue": "発行する",
+    "recipient_list": "対象者一覧",
+    "email": "メールアドレス",
+    "name": "名前",
+    "user_type": "ユーザー種別",
+    "group": "部署",
+    "change_opening_datetime": "開講日時の変更",
+    "change_closing_datetime": "閉講日時の変更",
+    "change": "変更する",
+    "not_change": "変更しない",
+    "select_number_total": "選択:{{number}}/{{total}}",
+    "type_user": {
+      "STUDENT": "受講者"
+    }
+  },
+	"create": {
+		"title": "受講権限の発行",
+    "confirm": "受講権限を発行してもよろしいですか？\n選択したチャンネルの受講権限が既に発行されているユーザーには受講権限が発行されません"
+	},
+	"edit": {
+		"title": "受講権限の変更",
+    "confirm": "受講権限を変更してもよろしいですか？"
+	},
+  "select_user": {
+    "title": "対象者を選択",
+    "name": "名前",
+    "email": "メールアドレス",
+    "group": "部署",
+    "attribute": "グループ",
+    "select_number": "{{number}}件選択する",
+    "placeholder_name": "例）鈴木　一郎",
+    "placeholder_email": "例）example@example.com",
+    "select_group": "部署を選択",
+    "select_attribute": "グループを選択",
+    "login_count": "ログイン回数（累計）",
+    "last_login": "最終ログイン日時"
+  },
+  "management" : {
+    "title": "受講権限の発行状態",
+    "course_availability": "受講可否",
+    "issue_attendance": "受講権限を発行する",
+    "change_attendance": "受講権限の変更",
+    "date_time_issue": "発行日時",
+
+    "only_available": "受講可のみ",
+    "only_unavailable": "受講不可のみ",
+
+    "delete_line_1_start": "選択された受講権限",
+    "delete_line_1_end": "件をまとめて削除します。",
+    "delete_line_2": "受講権限を削除した場合、学習履歴など紐づく情報が全て閲覧できなくなります。",
+    "delete_line_3": "※履歴を消さずに閉講だけ行う場合は",
+    "delete_line_4": "「受講権限の変更」→「閉講日時」から設定して変更してください。"
+  },
+	"validation": {
+    "range_date": "閉講日時が開講日時以前に指定されています。"
+	},
+	"error_message": {
+		"required_course": "チャンネルを登録してください。 ",
+		"required_unit": "番組を登録してください。",
+		"required_info_course_to_assign": "割り当てしてください。",
+		"upload_video_fail": "アップロード失敗しました。もう一度やり直してください。",
+		"course_has_been_assigned": "こちらの講座は割当されました。",
+		"not_assign_course_private": "非公開のチャンネルが受講権限の発行はできません。"
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"externalApi": {
+		"title": "List of external linking APIs",
+		"createButton": "Registration of API information",
+		"externalApi": "External linkage API",
+		"confirmDelete": "Are you sure you want to delete it?"
+	},
+	"externalIp": {
+		"title": "IP address for external linkage",
+		"ipAddress": "IP Address",
+		"explain": "Enter the allowed IPs for each external API. For multiple IPs, separate them with commas.",
+		"confirmDelete": "Are you sure you want to delete it?"
+	},
+	"apiManager": {
+		"title": "Setting Allowed IPs for External APIs",
+		"explain": {
+			"line1": "Enter the allowed IPs for each external API. For multiple IPs, separate them with commas.",
+			"line2": "If you enter *, there is no limit."
+		},
+		"confirmDelete": "Are you sure you want to delete it?"
+	}
+}

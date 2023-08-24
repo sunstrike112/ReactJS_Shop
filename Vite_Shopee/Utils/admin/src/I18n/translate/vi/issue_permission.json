@@ -1,0 +1,87 @@
+{
+	"options": {
+		"optional": "Tùy ý",
+		"required": "Bắt buộc",
+		"request_password": "Yêu cầu",
+		"not_request_password": "Không yêu cầu"
+	},
+	"common": {
+		"course_start_date": "Ngày giờ khai giảng",
+		"course_end_date": "Ngày giờ bế giảng",
+		"optional_required": "Bắt buộc tham gia học",
+		"course": "Khóa học",
+		"request_password": "Yêu cầu nhập password",
+		"search": "Tìm kiếm",
+		"no_category": "Không có danh mục",
+		"select": "Chọn",
+		"items_select_number": "{{number}} đang chọn",
+		"target_student": "Đối tượng tham gia học",
+		"select_recipients": "Chọn đối tượng",
+		"persons_select_number": "{{number}} người được chọn.",
+		"current_select": "Xóa người dùng hiện đang được thêm vào mục tiêu và chọn lại nó.",
+		"reselect_recipients": "Chọn lại đối tượng",
+		"issue": "Phát hành",
+		"recipient_list": "Danh sách đối tượng",
+		"email": "Email",
+		"name": "Tên",
+		"user_type": "Loại người dùng",
+		"group": "Nhóm",
+		"change_opening_datetime": "Thay đổi thời gian mở",
+		"change_closing_datetime": "Thay đổi thời gian đóng",
+		"change": "Thay đổi",
+		"not_change": "Không thay đổi",
+		"select_number_total": "Chọn:{{number}}/{{total}}",
+		"type_user": {
+			"STUDENT": "Học viện"
+		}
+	},
+	"create": {
+		"title": "Phát hành quyền tham gia học",
+		"confirm": "Bạn có muốn phát hành quyền tham gia học không?\nQuyền tham gia học sẽ không được phát hành cho user đã được cấp quyền học với khóa học được chọn trước đó."
+	},
+	"edit": {
+		"title": "Thay đổi quyền tham gia học",
+		"confirm": "Bạn có muốn thay đổi quyền tham gia học không?"
+	},
+	"select_user": {
+		"title": "Chọn đối tượng",
+		"name": "Tên",
+		"email": "Địa chỉ mail",
+		"group": "Nhóm",
+		"attribute": "Thuộc tính",
+		"select_number": "Chọn {{number}} bản ghi",
+		"placeholder_name": "Ví dụ: Suzuki Ichiro",
+		"placeholder_email": "Ví dụ: example@example.com",
+		"select_group": "Chọn nhóm",
+		"select_attribute": "Chọn thuộc tính",
+		"login_count": "Số lần đăng nhập (Lũy kế)",
+		"last_login": "Ngày giờ đăng nhập sau cùng"
+	},
+	"management": {
+		"title": "Trạng thái cấp quyền tham gia học",
+		"course_availability": "Có hoặc không thể tham gia học",
+		"issue_attendance": "Phát hành quyền tham gia học",
+		"change_attendance": "Thay đổi quyền tham gia học",
+		"date_time_issue": "Ngày giờ phát hành",
+
+		"only_available": "Chỉ có thể tham gia học",
+		"only_unavailable": "Chỉ không thể tham gia học",
+
+		"delete_line_1_start": "Bạn có muốn tổng hợp Quyền tham gia học",
+		"delete_line_1_end": "dữ kiện đã chọn rồi xóa không?",
+		"delete_line_2": "Nếu bạn xóa cơ quan tham dự, bạn sẽ không thể xem tất cả các thông tin được liên kết, chẳng hạn như lịch sử học tập.",
+		"delete_line_3": "Khi chỉ đóng cửa mà không xóa lịch sử Vui lòng nhấp vào \"thay đổi quyền tham dự\" và thay đổi từ \"ngày và giờ đóng\" và thay đổi.",
+		"delete_line_4": ""
+	},
+	"validation": {
+		"range_date": "Ngày bế giảng phải được xác định trước ngày khai giảng."
+	},
+	"error_message": {
+		"required_course": "Vui lòng chọn khoá học",
+		"required_unit": "Vui lòng chọn bài học",
+		"required_info_course_to_assign": "Hãy assign người dùng vào khóa học",
+		"upload_video_fail": "Upload video bị lỗi! Vui lòng upload video lại",
+		"course_has_been_assigned": "Khóa học này đã được phân công.",
+		"not_assign_course_private": "Khoá học này đang ở chế độ riêng tư nên không thể phân công."
+	}
+}

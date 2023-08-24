@@ -1,0 +1,49 @@
+{
+	"title": "番組のアップロード",
+	"create_button": "フォルダを作成",
+	"upload_button": "ファイルをアップロード",
+	"delete_button": "削除する",
+	"copy_button": "Copy folder",
+	"name": "フォルダ/ファイル名",
+	"size": "サイズ",
+	"date": "登録日時",
+	"file_name": "ファイル名",
+	"delete_dialog_title": "まとめて削除する",
+	"message_confirm_delete": "削除したデータは元に戻すことができません。選択されたファイルをまとめて削除しますか？",
+	"upload_file": {
+		"title": "ファイルをアップロード",
+		"file": "File"
+	},
+	"create": {
+		"title": "フォルダの作成",
+		"folder_name": "フォルダ名",
+		"confirm_register": "フォルダーを作成しますか？"
+	},
+	"edit": {
+		"title_edit_folder": "フォルダの名前を変更します",
+		"title_edit_file": "ファイルの名称変更",
+		"file_name": "ファイル名",
+		"folder_name": "フォルダ名",
+		"course": "チャンネル",
+		"confirm_change": "ファイルを変更しますか？",
+		"move_file" : "選択したディレクトリにファイルを変更しますか?"
+	},
+	"create_recording": "録画を開始する",
+	"LECTURES_FILES": "動画用ファイル",
+	"VIDEO_RECORDING": "ビデオの録画",
+	"FILE_FOR_SMARTPHONE": "スマホ用ファイル",
+	"RECORDING": "録画",
+	"origin": "ファイルパス",
+	"edited": "編集",
+	"file_url": "ファイルURL",
+	"talk_board": {
+		"suggest_upload": "添付ファイルは20MB以下のファイル を5つまで添付できます。",
+		"upload_wrong_type": "{{fileName}} は無効なファイル拡張子です。拡張子が\"txt, pdf, xls, xlsx, doc, docx, ppt, pptx, png, jpg, jpeg, bmp, gif\"のファイルのみサポートしています。",
+		"upload_failed": "ファイルのアップロードに失敗しました",
+		"add_file": "添付ファイルを追加する",
+		"confirm_delete_file": "このファイルを削除しますか？",
+		"warning_file_size": "添付ファイルは２０MB以下のファイルを５つまで添付できます",
+		"upload_exceed_limit": "アップロードファイルの合計容量が登録したプランのデータの空き容量を超えました。"
+	},
+	"link_editor_GB": "５GB以上の動画は編集できません。"
+}

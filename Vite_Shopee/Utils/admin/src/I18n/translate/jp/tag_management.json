@@ -1,0 +1,10 @@
+{
+	"create_button": "タグを作成する",
+	"tag_name": "タグ名",
+	"create_title": "タグ登録",
+	"edit_title": "タグ変更",
+	"delete_title": "タグ消去",
+	"create_confirm": "タグを登録しますか ?",
+	"edit_confirm": "タグを変更しますか ?",
+	"message_confirm_delete": "選択された {{amount}} つタグを削除しますか？"
+}

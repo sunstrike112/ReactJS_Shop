@@ -1,0 +1,48 @@
+{
+	"title": "Company management",
+	"company_name": "Company name",
+	"registration_date": "Registration date",
+	"expiration_date": "Expiration date",
+	"last_login_date": "Last login date",
+	"contract_plan": "Contract plan",
+	"company_status": "Status",
+	"data_capacity": "Data capacity",
+	"number_of_user": "Number of users",
+	"register_company": "Register a company",
+	"plan": "Plan",
+	"user_using": "{{ userIsUsing }} users/{{ totalUser }} users",
+	"data_using": "{{ dataUsing }}/{{ totalData }}",
+	"TRIAL": "Trial",
+	"CANCELLATION": "Cancellation",
+	"USING": "Contract",
+	"STOPPING": "Stopping",
+	"SUBSCRIBE": "Subscribe",
+	"access_company": "Access company",
+	"target_access_company": "Selection target",
+	"company_type": "Company type",
+	"list_company": "List company",
+	"select_company": "Select company",
+	"warning_delete_message": "Are you sure you want to delete this company?",
+	"warning_refused_message": "Are you sure you want to put this company back on the waiting list for approval?",
+	"download_csv": "Download CSV",
+	"delete_btn": "Back",
+	"USING_WORKSPACE": "Contract & Workspace",
+	"waiting": {
+		"title": "Company waiting for approve/refuse",
+		"reviewAndApproveChanges": "Review and approve changes",
+		"warning_approve_and_refused_message": "Are you sure you want to run it?",
+		"saveChangesAndPutThemOnHold": "Save to reserve",
+		"duplication": "Duplication",
+		"refusedList": "Refused list",
+		"reserve": "Reserve",
+		"canBeRefused": "Yes",
+		"canBeDuplicated": "Yes",
+		"companyCodeSeraku": "Company code Seraku"
+	},
+	"waiting_detail": {
+		"title": "Company information"
+	},
+	"refused": {
+		"title": "Company refused"
+	}
+}

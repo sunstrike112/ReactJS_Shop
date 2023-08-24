@@ -1,0 +1,155 @@
+{
+	"title": "Unit settings",
+	"course": "Course",
+	"unit": "Unit",
+	"views": "Total view",
+	"num_of_viewers": "Total viewer",
+	"unit_detail": "Unit details",
+	"register_test": "Register test",
+	"message_complete": "Completion message",
+	"estimate_study": "Estimated study time",
+	"basic_info": "Basic information",
+	"limit_start_date": "Limit on attendance period (start date and time)",
+	"limit_end_date": "Limit on attendance period (end date and time)",
+	"none": "None",
+	"register_unit": "Register new unit",
+	"unit_settings": "Unit settings",
+	"course_name": "Course name",
+	"update_order": "Update the sort order",
+	"delete_all": "Delete all",
+	"question_confirm_amount_start": "Are you sure you want to delete the",
+	"question_confirm_amount_end": "selected Unit(s)?",
+	"question_confirm_warning": "If you delete Unit the following data will also be deleted at the same time and it will not be recoverable.",
+	"question_confirm_warning_first": "・ Training rights for the unit (Users will not be able to take units)",
+	"question_confirm_warning_second": "・ Study history of the unit (you will not be able to view or download user learning history)",
+	"unitTypeName": "Unit type",
+	"minutes": "{{ number }} minute(s)",
+	"back_test_details": "Back to test details",
+	"report_question_list": "Report question list",
+	"filter": {
+		"no_category": "No category",
+		"course_name": "Course name"
+	},
+	"detail": {
+		"title": "Test details",
+		"label_limit_start_date": "Do not set (release since the course start date and time)",
+		"label_limit_end_date": "Do not set (release until the course end date and time)",
+		"question_settings": "Question settings",
+		"option_settings": "Option settings",
+		"number_of_question": "Number of questions",
+		"number_of_question_count": "{{ number }} question(s) ({{ number }} question(s) registered)",
+		"passing_score": "Passing score",
+		"passing_score_count": "{{ pointPass }} point(s) / {{ totalPoint }} point(s) (full marks)",
+		"full_marks": "Full marks",
+		"set_item": "Set this item",
+		"total_allocated_points": "Total allocated points",
+		"time_limit": "Time limit",
+		"limit_number": "Limit on number",
+		"back_unit_settings": "Back to unit settings",
+		"release_since": "Release since",
+		"release_until": "Release until",
+		"date": "Date",
+		"time": "Time",
+		"release_since_value": "Release since {{ time }}",
+		"release_until_value": "Release until {{ time }}",
+		"submit_deadline": "Submission deadline",
+		"do_not_set_deadline": "Do not set (no deadline)",
+		"submitted_until": "Can be submitted until",
+		"submitted_until_value": "Can be submitted until {{ time }}",
+		"answerTitle": "Answer",
+		"isAnswerDisplay": "Display",
+		"isAnswerHidden": "Hidden"
+	},
+	"basic_info_setting": {
+		"title": "Basic information settings",
+		"confirm_change": "Will you change test?",
+		"show_answer": "Show Answers"
+	},
+	"register_test_screen": {
+		"confirm_register": "Will you register test?"
+	},
+	"validate": {
+		"duplicate_unit": "A unit with the same name already exists in the course.",
+		"wrong_limitEndDate": "The course end date and time is set before the course start date and time.",
+		"required_limitDate": "Enter the date. (time can be omitted)",
+		"limit_time": "Time limit must be no greater than {{ time }}"
+	},
+	"registration_unit_setting": {
+		"sort": {
+			"title": "Update the sort order",
+			"index": "No.",
+			"sort": "Update",
+			"courseName": "Course name"
+		}
+	},
+	"question_setting": {
+		"title": "Question settings",
+		"test_question_category": "Test question category",
+		"question_type": "Question type",
+		"question_text": "Question text",
+		"question_code": "Question management code",
+		"create_question": "Create a question",
+		"single_choice": "Single choice",
+		"multiple_choice": "Multiple choice",
+		"description_choice": "Description",
+		"point_allocation": "Point allocation",
+		"confirm_delete": "Will you delete all {{ number }} selected question(s) or random question set(s)?",
+		"update_score_success": "Passing score have been updated successfully"
+	},
+	"create_survey": {
+		"title": "Register survey",
+		"unit_survey_name": "Unit",
+		"unit_survey_detail": "Unit details",
+		"question_setting": "Question setting",
+		"select_question": "Confirm or change a question",
+		"create_question": "Create a question",
+		"confirm_register": "Will you register Survey?"
+	},
+	"edit_survey": {
+		"title": "Change survey",
+		"unit_survey_name": "Unit",
+		"unit_survey_detail": "Unit details",
+		"question_setting": "Question setting",
+		"select_question": "Confirm or change a question",
+		"create_question": "Create a question",
+		"confirm_change": "Will you change Survey?"
+	},
+	"unit_survey_question": {
+		"management": {
+			"title": "Survey question list",
+			"create_question": "Create a question",
+			"question_text": "Question text",
+			"question_type": "Question type",
+			"confirm_question": "Confirm the question",
+			"confirm_delete": "Will you delete all {{ number }} selected question(s)?"
+		},
+		"create": {
+			"title": "Register survey question",
+			"back_to_list": "Back to survey question list",
+			"optional_or_required_answer": "Optional/Required answer",
+			"question_text": "Question text",
+			"question_type": "Question type",
+			"choice": "Choice{{index}}",
+			"warning_submit_message": "Will you register Survey question?"
+		},
+		"edit": {
+			"title": "Change survey question",
+			"back_to_list": "Back to survey question list",
+			"optional_or_required_answer": "Optional/Required answer",
+			"question_text": "Question text",
+			"question_type": "Question type",
+			"choice": "Choice{{index}}",
+			"warning_submit_message": "Will you change Survey question?"
+		},
+		"necessary_level_option": {
+			"optional": "Optional",
+			"required": "Required"
+		},
+		"question_type_option": {
+			"single": "Single choice",
+			"multiple": "Multiple choice",
+			"description": "Description"
+		}
+	},
+	"back_to_unit_setting": "Back to unit settings"
+}

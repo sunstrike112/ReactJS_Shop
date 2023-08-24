@@ -1,0 +1,82 @@
+{
+	"course_management": "Course management",
+	"block_course_title": "Course",
+	"registration_course_categories": "Registration and management of course categories",
+	"registration_courses": "Registration and management of courses",
+	"unit_settings": "Unit settings",
+	"upload_file": "Upload course files",
+	"registration_certificates": "Registration and management of certificates",
+	"auto_assignment": "Auto assignment (course) settings",
+	"test_question": "Test question management",
+	"teaching_materials": "Creation and management of teaching materials",
+	"report_publishing": "Everyone's report publishing settings(search)",
+	"attendance_permissions": "Attendance permissions",
+	"issus_permission": "Issue of attendance permission",
+	"issue_status_permissions": "Issue status of attendance permissions",
+	"bulk_issue_permission": "Bulk issue and change of attendance permissions",
+	"course_type": "Course type",
+	"views": "Total view",
+	"like": "Total like",
+	"registration_course": {
+		"publish_course_option": {
+			"public": "Public",
+			"private": "Private"
+		},
+		"paid_course_option": {
+			"free": "Free",
+			"paid": "Paid"
+		},
+		"owner_option": {
+			"all": "All",
+			"company": "Contract company",
+			"nissoken": "ジョブナレ"
+		},
+		"management": {
+			"title": "Course list",
+			"delete_dialog_title": "Delete all",
+			"message_confirm_delete": "Are you sure you want to delete the {{amount}} selected Course(s)? If you delete the course , the course attendance history will also be deleted and cannot be restored.",
+			"course_category_name": "Course category name",
+			"course_name": "Course name",
+			"owner": "Course owner",
+			"create_button": "Register course",
+			"sort_button": "Update the sort order",
+			"delete_button": "Delete all",
+			"selected_courses": "Selecting {{amount}} item(s)",
+			"total_courses": "All {{amount}} item(s)",
+			"course_type": "Free / Paid",
+			"price": "Price",
+			"action": "Action",
+			"search_button": "Search with this condition"
+		},
+		"sort": {
+			"title": "Update the sort order",
+			"index": "No.",
+			"sort": "Update",
+			"courseName": "Course name"
+		},
+		"create": {
+			"title": "Register new course",
+			"course_name": "Course",
+			"course_category_name": "Course category",
+			"overview": "Overview",
+			"course_image": "Course image",
+			"public_setting": "Public / Private",
+			"course_type": "Free / Paid",
+			"price": "Price",
+			"create_submit": "Register",
+			"warning_submit_message": "Will you register Course?"
+		},
+		"edit": {
+			"title": "Change course",
+			"course_name": "Course",
+			"course_category_name": "Course category",
+			"overview": "Oveview",
+			"course_image": "Course image",
+			"public_setting": "Public / Private",
+			"course_type": "Free / Paid",
+			"price": "Price",
+			"edit_submit": "Edit",
+			"warning_submit_message": "Are you sure you want to edit?"
+		}
+	}
+}

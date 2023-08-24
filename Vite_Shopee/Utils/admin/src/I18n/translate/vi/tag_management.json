@@ -1,0 +1,10 @@
+{
+	"create_button": "Tạo thẻ mới",
+	"tag_name": "Tên thẻ",
+	"create_title": "Đăng ký thẻ mới",
+	"edit_title": "Thay đổi tên thẻ",
+	"Delete_title": "Xóa thẻ",
+	"create_confirm": "Bạn có muốn đăng ký thẻ không ?",
+	"edit_confirm": "Bạn có muốn thay đổi thẻ không ?",
+	"message_confirm_delete": "Bạn có muốn xoá tất cả {{amount}} Thẻ đã chọn không ?"
+}

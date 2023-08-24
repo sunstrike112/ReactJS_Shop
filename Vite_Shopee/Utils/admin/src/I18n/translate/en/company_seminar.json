@@ -1,0 +1,37 @@
+{
+	"common": {
+		"seminar_title": "Title",
+		"public": "Public",
+		"private": "Private",
+		"all": "All",
+		"nissoken_only": "Nissoken only",
+		"company_only": "Company only",
+		"nissoken": "ジョブナレ",
+		"seminar_title_input": "Seminar title",
+		"live_link": "Live stream link",
+		"live_password": "Password",
+		"start_date": "Start date and time",
+		"end_date": "End date and time",
+		"photo_setting": "Photo setting",
+		"public_setting": "Public setting",
+		"description": "Description",
+		"company_name": "Company name"
+	},
+	"create": {
+		"title": "Register seminar"
+	},
+	"edit": {
+		"title": "Change seminar"
+	},
+	"management": {
+		"title": "Seminar list",
+		"public_status": "Public status",
+		"Belonging": "Belonging",
+		"create_seminar": "Register new seminar",
+
+		"delete_line_1": "Are you sure you want to delete the {{number}} selected Seminar(s)"
+	},
+	"validation": {
+		"range_date": "The seminar end date and time is set before the seminar start date and time."
+	}
+}

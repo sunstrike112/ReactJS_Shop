@@ -1,0 +1,37 @@
+<mjml>
+  <mj-body background-color="#ccd3e0" font-size="13px">
+    <mj-include path="./partials/header.mjml" />
+
+    <mj-include path="./partials/salutation.mjml" />
+
+    <mj-section background-color="#356cc7" padding-bottom="5px" padding-top="0">
+      <mj-column width="100%">
+        <mj-text align="center" color="#FFF" font-size="13px" font-family="Helvetica" padding-left="25px" padding-right="25px" padding-bottom="28px" padding-top="28px">
+          <span style="font-size:15px">Enquiry</span>
+        </mj-text>
+      </mj-column>
+      <mj-column width="100%">
+        <mj-text color="#FFF" font-size="13px" font-family="Helvetica">
+          organizationId: {{organizationId}}
+        </mj-text>
+        <mj-text color="#FFF" font-size="13px" font-family="Helvetica">
+          organizationName: {{organizationName}}
+        </mj-text>
+        <mj-text color="#FFF" font-size="13px" font-family="Helvetica">
+          firstName: {{firstName}}
+        </mj-text>
+        <mj-text color="#FFF" font-size="13px" font-family="Helvetica">
+          lastName: {{lastName}}
+        </mj-text>
+        <mj-text color="#FFF" font-size="13px" font-family="Helvetica">
+          email: {{email}}
+        </mj-text>
+        <mj-text color="#FFF" font-size="13px" font-family="Helvetica">
+          enquiry: {{enquiry}}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="./partials/footer.mjml" />
+  </mj-body>
+</mjml>

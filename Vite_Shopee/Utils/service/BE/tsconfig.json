@@ -1,0 +1,107 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2019",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "paths": {
+      "@core": [
+        "apps/api/src/core"
+      ],
+      "@core/*": [
+        "apps/api/src/core/*"
+      ],
+      "@modules": [
+        "apps/api/src/modules"
+      ],
+      "@modules/*": [
+        "apps/api/src/modules/*"
+      ],
+      "@crud": [
+        "apps/api/src/core/crud"
+      ],
+      "@crud/*": [
+        "apps/api/src/core/crud/*"
+      ],
+      "@generated": [
+        "apps/api/src/generated"
+      ],
+      "@generated/*": [
+        "apps/api/src/generated/*"
+      ],
+      "@decorators": [
+        "apps/api/src/shared/decorators"
+      ],
+      "@decorators/*": [
+        "apps/api/src/shared/decorators/*"
+      ],
+      "@filters": [
+        "apps/api/src/shared/filters"
+      ],
+      "@filters/*": [
+        "apps/api/src/shared/filters/*"
+      ],
+      "@interceptors": [
+        "apps/api/src/shared/interceptors"
+      ],
+      "@interceptors/*": [
+        "apps/api/src/shared/interceptors/*"
+      ],
+      "@helpers": [
+        "apps/api/src/shared/helpers"
+      ],
+      "@helpers/*": [
+        "apps/api/src/shared/helpers/*"
+      ],
+      "@guards": [
+        "apps/api/src/shared/guards"
+      ],
+      "@guards/*": [
+        "apps/api/src/shared/guards/*"
+      ],
+      "@middlewares": [
+        "apps/api/src/shared/middlewares"
+      ],
+      "@middlewares/*": [
+        "apps/api/src/shared/middlewares/*"
+      ],
+      "@config": [
+        "apps/api/src/config"
+      ],
+      "@config/*": [
+        "apps/api/src/config/*"
+      ],
+      "@constants": [
+        "apps/api/src/constants"
+      ],
+      "@constants/*": [
+        "apps/api/src/constants/*"
+      ],
+      "@system-core": [
+        "apps/system/src/core"
+      ],
+      "@system-core/*": [
+        "apps/system/src/core/*"
+      ],
+      "@system-modules": [
+        "apps/system/src/modules"
+      ],
+      "@system-modules/*": [
+        "apps/system/src/modules/*"
+      ],
+      "@system-config": [
+        "apps/system/src/config"
+      ],
+      "@system-config/*": [
+        "apps/system/src/config/*"
+      ],
+    }
+  }
+}

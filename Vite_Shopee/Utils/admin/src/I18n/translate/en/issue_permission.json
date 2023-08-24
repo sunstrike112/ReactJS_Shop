@@ -1,0 +1,89 @@
+{
+	"options": {
+		"optional": "Optional",
+		"required": "Required",
+		"request_password": "Request",
+		"not_request_password": "Unrequest"
+	},
+	"common": {
+		"course_start_date": "Course start date and time",
+		"course_end_date": "Course end date and time",
+		"optional_required": "Optional/Required course",
+		"course": "Course",
+		"request_password": "Request password",
+		"search": "Search",
+		"no_category": "No category",
+		"select": "Select",
+		"items_select_number": "{{number}} items are selected",
+		"target_student": "Target student",
+		"select_recipients": "Select recipients",
+		"persons_select_number": "{{number}} person(s) are selected.",
+		"current_select": "Currently selected target users will be cleared to select targets again.",
+		"reselect_recipients": "Reselect recipients",
+		"issue": "Issue",
+		"recipient_list": "Recipient list",
+		"email": "Email",
+		"name": "Name",
+		"user_type": "User type",
+		"group": "Group",
+		"change_opening_datetime": "Change opening datetime",
+		"change_closing_datetime": "Change closing datetime",
+		"change": "Change",
+		"not_change": "Not change",
+		"select_number_total": "Select:{{number}}/{{total}}",
+		"type_user": {
+			"STUDENT": "Student"
+		}
+	},
+	"create": {
+		"title": "Issue of attendance permission",
+		"confirm": "Will you issue attendance permission?\nAttendance permission will not be issued to users to whom a permission for the selected course has already been issued"
+	},
+	"edit": {
+		"title": "Change attendance permission",
+		"confirm": "Will you change attendance permission?"
+	},
+	"select_user": {
+		"title": "Select recipients",
+		"name": "Name (in English alphabet)",
+		"email": "Email addresses",
+		"group": "Group",
+		"attribute": "Attribute",
+		"select_number": "Select {{number}} item(s)",
+		"placeholder_name": "Example) Suzuki Ichiro",
+		"placeholder_email": "Example) example@example.com",
+		"select_group": "Select group",
+		"select_attribute": "Select attribute",
+		"login_count": "Login count (total)",
+		"last_login": "Last login date and time"
+	},
+	"management": {
+		"title": "Issue status of attendance permissions",
+		"course_availability": "Course availability",
+		"issue_attendance": "Issue attendance permission",
+		"change_attendance": "Change attendance permission",
+		"date_time_issue": "Date and time of issue",
+
+		"only_available": "Only available courses",
+		"only_unavailable": "Only unavailable courses",
+
+		"delete_line_1_start": "Are you sure you want to collect and delete Attendance permissions",
+		"delete_line_1_end": "records that you have just selected?",
+		"delete_line_2": "If you delete the attendance authority, you will not be able to view all linked information such as learning history.",
+		"delete_line_3": "*When only closing without erasing history, click \"Change attendance authority\" and set \"Closing datetime\".",
+		"delete_line_4": ""
+	},
+	"validation": {
+		"file_required": "Image files (jpg, gif, png), audio files (mp3) and video files (mp4) of 20MB or less can be attached.",
+		"image_required": "4 MB or less. An image file (jpg, gif, or png) can be attached.",
+		"range_date": "The course end date and time is set before the course start date and time."
+	},
+	"error_message": {
+		"required_course": "Please select a course.",
+		"required_unit": "Please select a lesson.",
+		"required_info_course_to_assign": "Please assign",
+		"upload_video_fail": "Video upload error! Please re-upload the video",
+		"course_has_been_assigned": "This course has been assigned.",
+		"not_assign_course_private": "Unpublished course cannot issue enrollment privileges."
+	}
+}

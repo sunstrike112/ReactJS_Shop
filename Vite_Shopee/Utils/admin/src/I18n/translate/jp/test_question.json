@@ -1,0 +1,37 @@
+{
+	"back_to_question": "出題設定に戻る",
+	"back_to_test_question_management": "テスト問題の管理に戻る",
+	"test_question_detail": "テスト問題の詳細",
+	"options": {
+		"optional": "任意",
+		"required": "必須",
+		"single_choice": "単一選択",
+		"multiple_choice": "複数選択",
+		"description": "記述式"
+	},
+	"create": {
+		"title": "テスト問題の登録",
+		"optional_or_required_answer": "解答の任意/必須",
+		"question_type": "問題種別",
+		"question_text": "問題文",
+		"choice_number": "選択肢{{number}}",
+		"correct_answer": "正解",
+		"remark": "備考",
+		"correct_answer_number": "正解{{number}}",
+		"warning_submit_message": "テスト問題を登録してもよろしいですか？",
+		"restrict": "制限する",
+		"un_restrict": "制限しない",
+		"show": "表示する",
+		"un_show": "表示しない",
+		"explanation": "解説",
+		"hint": "ヒント"
+	},
+	"edit": {
+		"title": "テスト問題の変更",
+		"warning_submit_message": "テスト問題を変更してもよろしいですか？"
+	},
+	"validation": {
+		"file_required": "20MB以下の画像ファイル（jpg,gif,png）と音声ファイル（mp3)、ビデオファイル(mp4)を添付できます。",
+		"image_required": "4MB以下の画像ファイル（jpg,gif,png）を添付できます。"
+	}
+}

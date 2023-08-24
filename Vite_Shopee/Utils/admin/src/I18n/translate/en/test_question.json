@@ -1,0 +1,37 @@
+{
+	"back_to_question": "Back to question settings",
+	"back_to_test_question_management": "Back to test question management",
+	"test_question_detail": "Test question details",
+	"options": {
+		"optional": "Optional",
+		"required": "Required",
+		"single_choice": "Single choice",
+		"multiple_choice": "Multiple choice",
+		"description": "Description"
+	},
+	"create": {
+		"title": "Register test question",
+		"optional_or_required_answer": "Optional/Required answer",
+		"question_type": "Question type",
+		"question_text": "Question text",
+		"choice_number": "Choice {{number}}",
+		"correct_answer": "Correct answer",
+		"remark": "Remarks",
+		"correct_answer_number": "Correct answer {{number}}",
+		"warning_submit_message": "Will you register Test question?",
+		"restrict": "Restrict",
+		"un_restrict": "Do not restrict",
+		"show": "Show",
+		"un_show": "Hide",
+		"explanation": "Explanation",
+		"hint": "Hint"
+	},
+	"edit": {
+		"title": "Change test question",
+		"warning_submit_message": "Will you change Test question?"
+	},
+	"validation": {
+		"file_required": "Image files (jpg, gif, png), audio files (mp3) and video files (mp4) of 20MB or less can be attached.",
+		"image_required": "4 MB or less. An image file (jpg, gif, or png) can be attached."
+	}
+}

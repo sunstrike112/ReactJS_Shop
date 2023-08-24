@@ -1,0 +1,51 @@
+{
+	"title": "Upload course files",
+	"create_button": "Create a folder",
+	"upload_button": "Upload a file",
+	"delete_button": "Delete",
+	"copy_button": "Copy folder",
+	"name": "Folder/file name",
+	"size": "Size",
+	"date": "Created at",
+	"file_name": "File name",
+	"delete_dialog_title": "Delete all",
+	"message_confirm_delete": "Deleted data cannot be restored. Will you delete all the selected files?",
+	"upload_file": {
+		"title": "Upload a file",
+		"file": "File"
+	},
+	"create": {
+		"title": "Create a folder",
+		"folder_name": "Folder name",
+		"course": "Course",
+		"confirm_register": "Will you create folder?"
+	},
+	"edit": {
+		"title": "Change folder name",
+		"title_edit_folder": "Change folder name",
+		"title_edit_file": "Change file name",
+		"file_name": "File name",
+		"folder_name": "Folder name",
+		"course": "Course",
+		"confirm_change": "Will you change file name?",
+		"move_file" : "Will you change the file to the selected directory?"
+	},
+	"create_recording": "Start recording",
+	"LECTURES_FILES": "Lectures files",
+	"VIDEO_RECORDING": "Video recording",
+	"FILE_FOR_SMARTPHONE": "File for smartphone",
+	"RECORDING": "Recording",
+	"origin": "Origin",
+	"edited": "Edited",
+	"file_url": "File URL",
+	"talk_board": {
+		"suggest_upload": "You can attach up to 5 files of 20MB or less.",
+		"upload_wrong_type": "{{fileName}} is an invalid file extension. Only files with extension \"txt, pdf, xls, xlsx, doc, docx, ppt, pptx, png, jpg, jpeg, bmp, gif\" are supported.",
+		"upload_failed": "File upload failed",
+		"add_file": "Add attachment",
+		"confirm_delete_file": "Are you sure you want to delete this file?",
+		"warning_file_size": "Attachments you can attach up to 5 files of 20MB or less.",
+		"upload_exceed_limit": "The total capacity of the uploaded files has exceeded the free data capacity of the registered plan."
+	},
+	"link_editor_GB": "Videos larger than 5GB cannot be edited."
+}

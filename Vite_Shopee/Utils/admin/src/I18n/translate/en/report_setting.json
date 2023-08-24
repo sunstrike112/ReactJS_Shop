@@ -1,0 +1,37 @@
+{
+	"title": "Everyone's report publishing settings(search)",
+	"publish_other_students": "Publish to other students",
+	"publish": "Publish",
+	"do_not_publish": "Do not publish",
+	"everyone_report_setting": "Everyone's report publishing settings",
+	"back_report_details": "Back to report details",
+	"create_report": {
+		"title": "Create a report"
+	},
+	"detail": {
+		"title": "Report details",
+		"overview": "Overview",
+		"report_overview": "Report overview",
+		"attach_file": "Image/file attachment for explanation",
+		"question_to_set": "Questions to be set",
+		"image_explain": "Image for explanation",
+		"file_explain": "File attachment for explanation",
+		"handle_change_question": "To change question",
+		"question_are_setting": "{{ number }} question(s) are set."
+	},
+	"register": {
+		"title": "Register report question",
+		"back_report_question_list": "Back to report question list",
+		"limit_character": "Limit the number of characters of user responses",
+		"show_modal_answer": "Show model answer",
+		"modal_answer": "Model answer",
+		"confirm": "Will you register report question?"
+	},
+	"edit": {
+		"title": "Change report question",
+		"confirm": "Will you change report question?"
+	},
+	"publish_setting": {
+		"title": "Everyone's report publishing settings"
+	}
+}

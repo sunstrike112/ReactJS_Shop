@@ -1,0 +1,7 @@
+{
+	"setting_maintain": "Cài đặt bảo trì",
+	"maintenance": "Trạng thái bảo trì",
+	"maintenance_notice": "Thông báo bảo trì",
+	"special_user": "Người dùng đặc biệt",
+	"special_user_guide": "Người dùng đặc biệt sẽ không bị force logout khi hệ thống chuyển sang trạng thái bảo trì. Nhập người dùng đặc biệt bằng email hoặc loginId của người dùng, nếu muốn nhập nhiều người dùng thì phân tách nhau các email bởi dấu phẩy."
+}

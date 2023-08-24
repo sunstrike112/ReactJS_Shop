@@ -1,0 +1,1 @@
+export const DELETE_BY_CSV = '@USER/DELETE_BY_CSV'

@@ -1,0 +1,12 @@
+{
+	"title": "Subtitle settings",
+	"add_subtitle": "Add subtitle",
+	"delete_subtitle": "Delete subtitle",
+	"video_name": "Video name: ",
+	"save_preview": "Save and preview",
+	"save": "Save",
+	"back": "Back",
+	"insert_row_above": "Insert 1 subtitle above",
+	"tip_guideline": "Use the down/up key combination or the mouse wheel to adjust the time",
+	"leave_confirm": "Are you sure you want to leave this page? If you proceed, all data on this page will be lost."
+}

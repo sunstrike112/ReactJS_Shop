@@ -1,0 +1,39 @@
+{
+	"title": " Đăng ký bài giảng",
+	"edit_title": " Thay đổi bài giảng",
+	"course_name": "Khóa học",
+	"unit": "Bài học",
+	"unit_details": "Chi tiết bài học",
+	"displayType": "Cách hiển thị của màn hình bài giảng",
+	"path": "Đường dẫn",
+	"path_of_page": "Đường dẫn của trang",
+	"upload_or_refer_a_file": "Upload・Tham chiếu tệp tin",
+	"limit_on_attendance_start": "Hạn chế thời hạn tham gia học (ngày giờ bắt đầu)",
+	"limit_on_attendance_end": "Hạn chế thời hạn tham gia học (ngày giờ kết thúc)",
+	"do_not_set_start": "Không cài đặt (công khai cho đến ngày giờ khai giảng)",
+	"do_not_set_end": "Không cài đặt (công khai cho đến ngày giờ bế giảng)",
+	"messageCompleted": "Tin nhắn hoàn thành",
+	"estimatedStudyTime": "Thời gian học dự kiến",
+	"specify_a_path": "Chỉ định đường dẫn của tệp tin",
+	"release_since_start": "Công khai kể từ ngày",
+	"release_since_end": "",
+	"release_until_start": "Công khai cho đến",
+	"release_until_end": "",
+	"type_path_file": "Đường dẫn từ tệp tải lên",
+	"type_path_youTube": "Đường dẫn từ Youtube",
+	"type_path_external": "URL bên ngoài",
+	"validation": {
+		"invalid_range_date": "Ngày bế giảng phải được xác định sau ngày khai giảng.",
+		"date_required": "Hãy nhập ngày. (có thể bỏ giờ phút)",
+		"name_already_exists": "Đã tồn tại khóa học có cùng tên"
+	},
+	"message": {
+		"confirm_create": "Bạn có muốn đăng ký Bài giảng không?",
+		"confirm_edit": "Thay đổi Bài giảng được chứ ?"
+	},
+	"back_to_unit_setting": "Quay lại cài đặt bài học",
+	"is_not_system_link": "Hãy nhập link upload",
+	"is_not_youtube_link": "Hãy nhập link youtube",
+	"is_not_upload_file_link": "Hãy nhập link ngoại tuyến.",
+	"explain_for_creating_on_webview_mode": "*Quá trình xử lý có thể mất chút thời gian tùy thuộc vào kích thước tệp và tốc độ truyền thông tin, vì vậy hãy kiên nhẫn."
+}

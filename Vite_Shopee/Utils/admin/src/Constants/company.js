@@ -1,0 +1,6 @@
+export const APPROVED_RESULT = {
+  WAITING: 'WAITING',
+  ACTIVE: 'ACTIVE',
+  RESERVE: 'RESERVE',
+  REFUSE: 'REFUSE'
+}

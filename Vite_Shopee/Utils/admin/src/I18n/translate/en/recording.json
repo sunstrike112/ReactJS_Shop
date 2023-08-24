@@ -1,0 +1,20 @@
+{
+	"title": "Recording",
+	"start_msg": "Tap the \"Start Recording\" button to start recording.",
+	"upload_success": "You have successfully uploaded the video. You can watch the uploaded video by transitioning to \"Course Management> Upload course files\".",
+	"upload_success1": "The video has been uploaded. Please wait for a while until the processing is completed. Return to file list ",
+	"upload_success2": "Course Management> Upload course files",
+	"upload_success3": "\".",
+	"start": "Start recording",
+	"stop": "Stop recording",
+	"upload_recording": "Submit video",
+	"video_name": "Video name",
+	"video_required_name": "Please enter the video name.",
+	"leave_confirm": "Are you sure you want to leave this page? If you proceed, all data on this page will be lost.",
+	"user_webcam": "User Webcam",
+	"exist_file_name": "The video name already exists on the system. Please enter a different name.",
+	"link_video_title_modal": "Link to video editor",
+	"directory_list" : "Directory list",
+	"cancel": "Cancel",
+	"save": "Save"
+}

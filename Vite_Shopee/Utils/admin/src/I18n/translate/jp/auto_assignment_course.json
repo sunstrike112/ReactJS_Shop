@@ -1,0 +1,25 @@
+{
+  "title": "自動割り当て（チャンネル）の設定",
+  "auto_assignment_settings": "自動割り当て設定",
+  "register_auto_assignment": "自動割り当て設定を登録する",
+  "status": "状態",
+  "target_group": "対象部署",
+  "target_attribute": "対象グループ",
+  "target_range": "対象範囲必須",
+  "required_course": "受講の任意/必須",
+  "course_start_time": "開講日時",
+  "course_end_time": "閉講日時",
+  "create_automatic": {
+    "title": "自動割り当て（チャンネル）の登録",
+    "condition_specification": "条件指定",
+    "everyone": "全員",
+    "reject_delete_course": "自動割り当てチャンネルをすべて削除することはできません。"
+  },
+  "select_course": {
+    "title": "割り当てチャンネルの選択",
+    "course_type": "チャンネルタイプ"
+  },
+  "update_automatic": {
+    "title": "自動割り当て（チャンネル）の変更"
+  }
+}

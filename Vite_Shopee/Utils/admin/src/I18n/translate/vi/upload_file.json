@@ -1,0 +1,49 @@
+{
+	"title": "Tải lên file dùng cho khóa học",
+	"create_button": "Tạo thư mục",
+	"upload_button": "Tải tệp tin lên",
+	"delete_button": "Xoá",
+	"copy_button": "Copy folder",
+	"name": "Thư mục/Tệp tin",
+	"size": "Kích cỡ",
+	"date": "Ngày giờ tạo",
+	"file_name": "Tên tệp tin",
+	"delete_dialog_title": "Tổng hợp rồi xóa",
+	"message_confirm_delete": "Không thể trả dữ liệu đã xóa về như cũ. Bạn có muốn tổng hợp rồi xóa tệp tin đã chọn không?",
+	"upload_file": {
+		"title": "Tải tệp tin lên",
+		"file": "File"
+	},
+	"create": {
+		"title": "Tạo thư mục",
+		"folder_name": "Tên thư mục",
+		"confirm_register": "Bạn sẽ tạo thư mục chứ?"
+	},
+	"edit": {
+		"title_edit_folder": "Thay đổi tên thư mục",
+		"title_edit_file": "Thay đổi tên tệp tin",
+		"file_name": "Tên tệp tin",
+		"folder_name": "Tên thư mục",
+		"course": "Khoá học",
+		"confirm_change": "Bạn sẽ thay đổi tên tệp tin chứ?",
+		"move_file" : "Bạn sẽ thay đổi tập tin vào thư mục đã chọn chứ?"
+	},
+	"create_recording": "Bắt đầu ghi hình",
+	"LECTURES_FILES": "File dùng cho bài giảng",
+	"VIDEO_RECORDING": "Bản ghi hình",
+	"FILE_FOR_SMARTPHONE": "File dùng cho smartphone",
+	"RECORDING": "Recording",
+	"origin": "Origin",
+	"edited": "Edited",
+	"file_url": "File URL",
+	"talk_board": {
+		"suggest_upload": "Bạn có thể đính kèm tối đa 5 tệp có dung lượng 20MB trở xuống.",
+		"upload_wrong_type": "{{fileName}} là một phần mở rộng tệp không hợp lệ. Chỉ các tệp có phần mở rộng \"txt, pdf, xls, xlsx, doc, docx, ppt, pptx, png, jpg, jpeg, bmp, gif\" mới được hỗ trợ.",
+		"upload_failed": "Tải lên tệp không thành công",
+		"add_file": "Đính kèm tập tin",
+		"confirm_delete_file": "Bạn có chắc chắn muốn xóa tệp này không?",
+		"warning_file_size": "Bạn có thể đính kèm tối đa 5 tệp có dung lượng 20MB trở xuống.",
+		"upload_exceed_limit": "Tổng số dung lượng file upload lên vượt quá dung lượng còn lại của gói planData đã đăng ký."
+	},
+	"link_editor_GB": "Không thể chỉnh sửa video lớn hơn 5GB."
+}

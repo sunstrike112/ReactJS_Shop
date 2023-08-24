@@ -1,0 +1,8 @@
+{
+  "email": "メールアドレス",
+  "password": "パスワード",
+  "host": "ホスト",
+  "protocol": "プロトコル",
+  "port": "ポート",
+  "fromName": "送信元名"
+}

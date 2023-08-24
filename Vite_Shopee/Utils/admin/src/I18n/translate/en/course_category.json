@@ -1,0 +1,33 @@
+{
+	"confirm_update": "Will you change Course category?",
+	"confirm_create": "Will you register Course category?",
+	"course_category_image": "Course category image",
+	"course_category_name": "Course category",
+	"parent_course_category_name": "Parent course category name",
+	"select_parent_cateogry": "Select category",
+	"register_course_category": "Register course category",
+	"eidt_course_category": "Change course category",
+	"delete_all": "Delete all",
+	"register": "Register",
+	"cancel": "Clear",
+	"button_register": "Register course category",
+	"selected_category": "Selecting {{amount}} item(s)",
+	"total_category": "{{amount}} item(s) in total",
+	"title": "Registration and management of course categories",
+	"search_label": "Course category name",
+	"number_of_course": "Number of courses",
+	"action": "Action",
+	"message_confirm_delete": "Are you sure you want to delete all {{amount}} selected Course category items at once?",
+	"validate": {
+		"image_type": "Invalid type for file \"{{imageName}}\". Only \"image\" files are supported.",
+		"image_size": "File \"{{imageName}}\" ({{imageSize}}) exceeds maximum allowed upload size of 10240 KB.",
+		"duplicate_name": "A course category with the same name already exists",
+		"empty_name": "Course category name cannot be blank.",
+		"same_category_selected": "The same category can not be selected and own the parent course category.",
+		"hierarchy_exceeds": "The modified hierarchy exceeds 2 level(s)."
+	},
+	"message": {
+		"create_success": "Category has been created",
+		"edit_success": "Category has been updated"
+	}
+}

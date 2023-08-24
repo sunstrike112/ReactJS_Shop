@@ -1,0 +1,25 @@
+{
+  "title": "Auto assignment (course) settings",
+  "auto_assignment_settings": "Auto assignment settings",
+  "register_auto_assignment": "Register auto assignment settings",
+  "status": "Status",
+  "target_group": "Target group",
+  "target_attribute": "Target attribute",
+  "target_range": "Target range",
+  "required_course": "Optional/Required course",
+  "course_start_time": "Course start date and time",
+  "course_end_time": "Course end date and time",
+  "create_automatic": {
+    "title": "Register auto assignment (course)",
+    "condition_specification": "Condition specification",
+    "everyone": "Everyone",
+    "reject_delete_course": "You cannot delete all auto-assigned courses."
+  },
+  "select_course": {
+    "title": "Selection of assignment course",
+    "course_type": "Course type"
+  },
+  "update_automatic": {
+    "title": "Change auto assignment (course)"
+  }
+}

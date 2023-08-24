@@ -1,0 +1,12 @@
+{
+  "interviewLog": "Interview Log",
+  "interviewLogRef": "Interview Log",
+  "interviewLogList": "Interview log list",
+  "interviewLogHistory": "Interview log history",
+
+  "date": "Date",
+  "esStaff": "ES Manager",
+  "inteviewCategory": "Interview category",
+  "dateOfNextInterview": "Next scheduled interview date",
+  "content": "Content"
+}

@@ -1,0 +1,37 @@
+{
+	"title": "みんなのレポート公開設定の検索",
+	"publish_other_students": "他の受講者への公開",
+	"publish": "公開する",
+	"do_not_publish": "公開しない",
+	"everyone_report_setting": "みんなのレポート公開設定",
+	"back_report_details": "レポートの詳細に戻る",
+	"create_report": {
+		"title": "レポート作成"
+	},
+	"detail": {
+		"title": "レポートの詳細",
+		"overview": "概要",
+		"report_overview": "レポート概要",
+		"attach_file": "説明用画像・添付ファイル",
+		"question_to_set": "出題する設問",
+		"image_explain": "説明用画像",
+		"file_explain": "説明用添付ファイル",
+		"handle_change_question": "設問を変更する",
+		"question_are_setting": "{{ number }}問設定されています。"
+	},
+	"register": {
+		"title": "レポート設問の登録",
+		"back_report_question_list": "レポート設問一覧に戻る",
+		"limit_character": "ユーザーの回答文字数を制限する",
+		"show_modal_answer": "模範解答を表示必須",
+		"modal_answer": "模範解答",
+		"confirm": "レポート設問を登録してもよろしいですか？"
+	},
+	"edit": {
+		"title": "レポート設問の変更",
+		"confirm": "レポート設問を変更してもよろしいですか？"
+	},
+	"publish_setting": {
+		"title": "みんなのレポート公開設定"
+	}
+}

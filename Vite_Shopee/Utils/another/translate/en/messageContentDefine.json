@@ -1,0 +1,56 @@
+{
+  "add": {
+    "title": "Confirmation",
+    "content": "Add new code?",
+    "no": "No",
+    "yes": "Yes"
+  },
+  "update": {
+    "title": "Confirmation",
+    "content": "Edit?",
+    "no": "No",
+    "yes": "Yes"
+  },
+  "delete": {
+    "title": "Caveat",
+    "content": "If you click 'Yes', the deleted record cannot be recovered.\n Are you sure you want to delete these records? ?",
+    "no": "No",
+    "yes": "Yes"
+  },
+  "cancel": {
+    "title": "Confirmation",
+    "content": "Are you sure you want to cancel this operation?",
+    "no": "No",
+    "yes": "Yes"
+  },
+  "filter": {
+    "no": "Close",
+    "yes": "Filter"
+  },
+  "noti_retirtement": {
+    "content": "Please double-check your information.",
+    "yes": "Confirm"
+  },
+  "role_lv_2": {
+    "title": "Confirmation",
+    "content": "Please select the lower level implementation action at below the upper level implementation action.",
+    "yes": "Confirm"
+  },
+  "role_lv_1": {
+    "title": "Confirmation",
+    "content": "High level implementation action are lower than lowe level implementation action.\n Do you want change lower level to the same class of implementation action?",
+    "no": "No",
+    "yes": "Yes"
+  },
+  "confirm_update": {
+    "title": "Confirmation",
+    "content": "This action does not update the data you are entering. Do you want to run?",
+    "no": "No",
+    "yes": "Yes"
+  },
+  "confirmRole": {
+    "title": "Confirmation",
+    "content": "The corresponding role has changed.",
+    "yes": "Confirm"
+  }
+}

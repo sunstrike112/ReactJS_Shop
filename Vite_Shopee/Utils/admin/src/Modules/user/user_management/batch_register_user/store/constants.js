@@ -1,0 +1,1 @@
+export const REGISTER_BY_CSV = '@USER/REGISTER_BY_CSV'

@@ -1,0 +1,55 @@
+<mjml>
+  <mj-body background-color="#ccd3e0">
+    <mj-include path="./partials/header.mjml" />
+
+    <mj-include path="./partials/salutation.mjml" />
+
+    <mj-section background-color="#356cc7" padding-bottom="5px" padding-top="0">
+      <mj-column width="100%">
+        <mj-text align="center" color="#FFF" font-size="16px" font-family="Helvetica" padding-left="25px" padding-right="25px" padding-bottom="28px" padding-top="28px">
+          <span>Here your booking information:</span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-wrapper border="1px solid #000000" padding="50px 30px">
+      <mj-section border-top="1px solid #000000" border-left="1px solid #000000" border-right="1px solid #000000" padding="16px">
+        <mj-column>
+          <mj-text padding-left="0px" font-size="14px">
+            <h4 style="margin-top: 0px; margin-bottom: 8px">Appointment:</h4>
+            <span style="margin-right: 16px">{{ appointmentDate }} {{ appointmentTime }}</span>
+          </mj-text>
+          <mj-text padding-left="0px" font-size="14px">
+            <h4 style="margin-top: 0px; margin-bottom: 8px">Store:</h4>
+            <p style="margin-top: 0px">{{ organization.name }}</p>
+            <span>{{ organization.addressLine1 }} , {{ organization.state }} {{ organization.suburb }} {{ organization.postCode }}</span>
+          </mj-text>
+          <mj-text padding-left="0px" font-size="14px">
+            <h4 style="margin-top: 0px; margin-bottom: 8px">Vehicle:</h4>
+            <p style="margin-top: 0px">{{ vehicle.rego }} · {{ vehicle.make }} {{ vehicle.model }} {{ vehicle.year }}</p>
+          </mj-text>
+          <mj-text padding-left="0px" font-size="14px">
+            <h4 style="margin-top: 0px; margin-bottom: 8px">Customer:</h4>
+            <p style="margin-top: 0px">{{ name }}</p>
+            <p style="margin-top: 0px">{{ customer.email }}</p>
+            <span>{{ customer.phoneNumber }}</span>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section border-left="1px solid #000000" border-right="1px solid #000000" padding="0px 16px 16px 16px" border-bottom="1px solid #000000">
+        <mj-column border="1px solid #000000">
+          <mj-raw>{{#each bookingServices}}</mj-raw>
+          <mj-text font-size="14px" padding="12px 16px">
+            <h4 style="margin-top: 0px">{{ this.service.name }}</h4>
+
+            <mj-raw>{{#each this.bookingPackages}}</mj-raw>
+              <span>{{ this.package.name }}</span>
+            <mj-raw>{{/each}}</mj-raw>
+          </mj-text>
+          <mj-raw>{{/each}}</mj-raw>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <mj-include path="./partials/footer.mjml" />
+  </mj-body>
+</mjml>

@@ -1,0 +1,8 @@
+{
+  "email": "Email",
+  "password": "Mật khẩu",
+  "host": "Host",
+  "protocol": "Protocol",
+  "port": "Cổng",
+  "fromName": "From Name"
+}

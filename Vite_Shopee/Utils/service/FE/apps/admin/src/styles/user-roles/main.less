@@ -1,0 +1,133 @@
+.list-container {
+  .ant-list-header {
+    padding: 0 !important;
+  }
+  &.add-header-list {
+    margin-top: 16px;
+    .list-item-container {
+      cursor: pointer;
+      padding: 0 0 8px 0;
+      .list-item {
+        color: #272F3E;
+      }
+    }
+  }
+}
+
+.user-roles-add {
+  &.ant-btn {
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+    min-width: 24px;
+    height: 24px;
+    width: 24px;
+  }
+  &[ant-click-animating-without-extra-node='true']::after {
+    display: none;
+  }
+}
+
+.permission-header, .permission-sub-header, .location-role-header {
+  background: #F9FAFB;
+}
+
+.border-user-roles {
+  border: 1px solid #EAECEF;
+}
+
+.border-right-none {
+  border-right: 0;
+}
+
+.user-roles-list-container {
+  display: flex;
+  align-items: center;
+  .user-roles-list-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    padding: 6px 12px;
+    cursor: pointer;
+    &.selected {
+      font-weight: bold;
+      background: #E4FAFF;
+    }
+    &:hover {
+      .delete-button {
+        display: flex;
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+        min-width: 16px;
+        height: 16px;
+        width: 16px;
+      }
+    }
+    .delete-button {
+      display: none;
+    }
+    .user-roles-list-item {
+      color: #272F3E;
+    }
+  }
+}
+.user-roles-permission-list-container {
+  padding: 12px 8px;
+  .checkbox-group-item {
+    padding-left: 24px;
+  }
+}
+
+.ant-col {
+  &.user-roles-permission-checkbox {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.checkbox-group {
+  .user-roles-checkbox {
+    .ant-checkbox-checked {
+      .ant-checkbox-inner {
+        background-color: #4D5562 !important;
+        border-color: #4D5562 !important;
+      }
+    }
+  }
+  
+  .user-permission-checkbox {
+    .ant-checkbox {
+      &.ant-checkbox-checked {
+        .ant-checkbox-inner {
+          background-color: #FA8C16 !important;
+          border-color: #FA8C16 !important;
+        }
+      }
+      &:not(.ant-checkbox-checked) {
+        .ant-checkbox-inner {
+          background: #FFF !important;
+          border-color: #FA8C16 !important;
+        }
+      }
+    }
+  }
+
+  .checkbox-group-item {
+    padding-left: 16px;
+  }
+
+  .ant-row {
+    &.ant-form-item {
+      margin: 0 !important;
+      .ant-form-item-control-input {
+        min-height: 0 !important;
+      }
+    }
+  }
+}
+
+.ant-input-affix-wrapper {
+  height: 32px;
+}

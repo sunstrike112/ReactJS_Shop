@@ -1,0 +1,9 @@
+{
+  "course_category_name": "チャンネルカテゴリ名",
+  "course_name": "チャンネル名",
+  "auto_assignment": "権限発行しなくても見れる",
+  "except_course": " 以下のチャンネル対象外",
+  "title": "割り当てチャンネルの選択",
+  "course_type": "チャンネルタイプ",
+  "message_confirm_delete": "選択されたチャンネル{{amount}}件をまとめて削除しますか？"
+}

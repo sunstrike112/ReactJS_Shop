@@ -1,0 +1,20 @@
+{
+	"title": "Ghi hình",
+	"start_msg": "Chạm vào nút \"Bắt đầu ghi hình\" để bắt đầu quay bài giảng.",
+	"upload_success": "Đã upload video thành công. Vui lòng vào \"Quản lí khóa học> Tải file lên dùng cho khóa học\" để xem video đã tải lên.",
+	"upload_success1": "Video đã được tải lên. Vui lòng đợi một lúc cho đến khi quá trình xử lý hoàn tất. Quay lại danh sách tệp ",
+	"upload_success2": "Quản lí khóa học> Tải file lên dùng cho khóa học",
+	"upload_success3": "\" để xem video đã tải lên.",
+	"start": "Bắt đầu ghi hình",
+	"stop": "Dừng lại",
+	"upload_recording": "Tải bản ghi hình lên",
+	"video_name": "Tên Video",
+	"video_required_name": "Tên video không được bỏ trống.",
+	"leave_confirm": "Bạn có chắc chắn muốn rời khỏi trang này. Nếu bạn thực hiện, tất cả data ở page này sẽ mất.",
+	"user_webcam": "Webcam của người dùng",
+	"exist_file_name": "Tên video này đã tồn tại trong hệ thống. Vui lòng đặt một tên khác.",
+	"link_video_title_modal": "Liên kết video editor",
+	"directory_list" : "Danh sách thư mục",
+	"cancel": "Hủy bỏ",
+	"save": "Lưu"
+}

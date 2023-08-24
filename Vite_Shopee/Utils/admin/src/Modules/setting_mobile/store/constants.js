@@ -1,0 +1,2 @@
+export const GET_DETAIL = '@SETTING_MOBILE/GET_DETAIL'
+export const UPDATE = '@SETTING_MOBILE/UPDATE'

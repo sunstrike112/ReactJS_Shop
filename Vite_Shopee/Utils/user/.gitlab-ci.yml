@@ -1,0 +1,132 @@
+stages:
+  - install
+  - build
+
+
+install_dependence:
+  stage: install
+  script:
+      - npm install
+  cache:
+    paths:
+      - ./node_modules
+    key: ${CI_COMMIT_REF_SLUG}
+    policy: push
+  only:
+    refs:
+      - develop
+    changes:
+      - package.json
+      - package-lock.json
+  tags:
+    - DEV
+
+build-develop:
+  stage: build
+  script:
+    - cp .env.example .env
+    - sed -i "s|CI_CD_BASE_API_URL|$CI_DEV_BASE_API_URL|g" .env
+    - sed -i "s|CI_CD_ADMIN_URL|$CI_CD_ADMIN_URL|g" .env
+    - sed -i "s|CI_CD_S3_URL|$CI_CD_DEV_S3_URL|g" .env
+    - sed -i "s|CI_CD_S3_PDF_URL|$CI_CD_DEV_S3_PDF_URL|g" .env
+    - cat .env
+    - npm run build
+    - sudo rsync -hrvzgo --chown=centos:centos --exclude=.git --delete $CI_PROJECT_DIR/ /srv/reactjs/
+    - aws s3 sync --cache-control 'max-age=604800' --exclude index.html build/ s3://nsk-dev-web/reactjs/ --delete
+    - aws s3 sync --cache-control 'no-cache' build/ s3://nsk-dev-web/reactjs/
+    - aws cloudfront create-invalidation --distribution-id $CI_DEV_CLOUDFONT_ID --paths '/*'
+  cache:
+    paths:
+      - ./node_modules
+    key: ${CI_COMMIT_REF_SLUG}
+    policy: pull
+  only:
+    - develop
+  tags:
+    - DEV
+
+##############
+install_dependence_staging:
+  stage: install
+  script:
+    - npm install
+  cache:
+    paths:
+      - ./node_modules
+    key: ${CI_COMMIT_REF_SLUG}
+    policy: push
+  only:
+    refs:
+      - staging
+    changes:
+      - package.json
+      - package-lock.json
+  tags:
+    - STG
+
+build-staging:
+  stage: build
+  script:
+    - cp .env.example .env
+    - sed -i "s|CI_CD_BASE_API_URL|$CI_STG_BASE_API_URL|g" .env
+    - sed -i "s|CI_CD_ADMIN_URL|$CI_STG_ADMIN_URL|g" .env
+    - sed -i "s|CI_CD_S3_URL|$CI_CD_STG_S3_URL|g" .env
+    - sed -i "s|CI_CD_S3_PDF_URL|$CI_CD_STG_S3_PDF_URL|g" .env
+    - cat .env
+    - npm run build
+    - sudo rsync -hrvzgo --chown=centos:centos --exclude=.git --delete $CI_PROJECT_DIR/ /srv/reactjs/
+    - aws s3 sync --cache-control 'max-age=604800' --exclude index.html build/ $CI_STG_S3_WEB/reactjs/ --delete
+    - aws s3 sync --cache-control 'no-cache' build/ $CI_STG_S3_WEB/reactjs/
+    - aws cloudfront create-invalidation --distribution-id $CI_STG_CLOUDFONT_ID --paths '/*'
+  cache:
+    paths:
+      - ./node_modules
+    key: ${CI_COMMIT_REF_SLUG}
+    policy: pull
+  only:
+    - staging
+  tags:
+    - STG
+
+###########
+install_dependence_production:
+  stage: install
+  script:
+    - npm install
+  cache:
+    paths:
+      - ./node_modules
+    key: ${CI_COMMIT_REF_SLUG}
+    policy: push
+  only:
+    refs:
+      - master
+    changes:
+      - package.json
+      - package-lock.json
+  tags:
+    - PRO
+
+build-production:
+  stage: build
+  script:
+    - cp .env.example .env
+    - sed -i "s|CI_CD_BASE_API_URL|$CI_PRO_BASE_API_URL|g" .env
+    - sed -i "s|CI_CD_ADMIN_URL|$CI_PRO_ADMIN_URL|g" .env
+    - sed -i "s|CI_CD_S3_URL|$CI_CD_PRO_S3_URL|g" .env
+    - cat .env
+    - npm run build
+    #- sudo rsync -hrvzgo --chown=centos:centos --exclude=.git --delete $CI_PROJECT_DIR/ /srv/reactjs/
+    - aws s3 sync --cache-control 'max-age=604800' --exclude index.html build/ $CI_PRO_S3_WEB/reactjs/ --delete
+    - aws s3 sync --cache-control 'no-cache' build/ $CI_PRO_S3_WEB/reactjs/
+    - aws cloudfront create-invalidation --distribution-id $CI_PRO_CLOUDFONT_ID --paths '/*'
+  cache:
+    paths:
+      - ./node_modules
+    key: ${CI_COMMIT_REF_SLUG}
+    policy: pull
+  only:
+    - master
+  tags:
+    - PRO
+

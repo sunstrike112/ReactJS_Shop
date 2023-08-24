@@ -1,0 +1,48 @@
+{
+	"title": "Quản lý công ty",
+	"company_name": "Tên công ty ",
+	"registration_date": "Ngày đăng ký",
+	"expiration_date": "Ngày hết hạn",
+	"last_login_date": "Ngày đăng nhập cuối cùng",
+	"contract_plan": "Kế hoạch hợp đồng",
+	"company_status": "Trạng thái",
+	"data_capacity": "Dung lượng dữ liệu",
+	"number_of_user": "Số lượng người dùng",
+	"register_company": "Đăng ký công ty",
+	"plan": "Kế hoạch",
+	"user_using": "{{ userIsUsing }} nhân viên/{{ totalUser }} nhân viên",
+	"data_using": "{{ dataUsing }}/{{ totalData }}",
+	"TRIAL": "Thử nghiệm",
+	"CANCELLATION": "Hủy bỏ",
+	"USING": "Có hợp đồng",
+	"STOPPING": "Đang tạm ngưng",
+	"SUBSCRIBE": "Đăng ký",
+	"access_company": "Công ty truy cập",
+	"target_access_company": "Mục tiêu lựa chọn",
+	"company_type": "Loại công ty",
+	"list_company": "Danh sách công ty",
+	"select_company": "Lựa chọn công ty",
+	"warning_delete_message": "Bạn có chắc chắn muốn xóa công ty này?",
+	"warning_refused_message": "Bạn có chắc chắn muốn đưa công ty này trở lại danh sách chờ phê duyệt không?",
+	"download_csv": "Tải CSV",
+	"delete_btn": "Trở lại",
+	"USING_WORKSPACE": "Có hợp đồng và Workspace",
+	"waiting": {
+		"title": "Công ty chờ phê duyệt/từ chối",
+		"reviewAndApproveChanges": "Xem xét và phê duyệt các thay đổi",
+		"warning_approve_and_refused_message": "Bạn có chắc chắn muốn chạy nó?",
+		"saveChangesAndPutThemOnHold": "Lưu vào bảo lưu",
+		"duplication": "Trùng lặp",
+		"refusedList": "Danh sách từ chối",
+		"reserve": "Bảo lưu",
+		"canBeRefused": "Có",
+		"canBeDuplicated": "Có",
+		"companyCodeSeraku": "Mã công ty Seraku"
+	},
+	"waiting_detail": {
+		"title": "Thông tin công ty"
+	},
+	"refused": {
+		"title": "Công ty đã từ chối"
+	}
+}

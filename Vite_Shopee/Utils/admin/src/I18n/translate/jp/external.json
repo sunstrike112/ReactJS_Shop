@@ -1,0 +1,22 @@
+{
+	"externalApi": {
+		"title": "外部連携のAPI一覧",
+		"createButton": "APIの情報の登録",
+		"externalApi": "外部連携のAPI",
+		"confirmDelete": "削除してもいいですか。"
+	},
+	"externalIp": {
+		"title": "外部連携用のIPアドレス",
+		"ipAddress": "IPアドレス",
+		"explain": "各外部APIの対して、許可IPを入力してください。複数のIPの場合、コンマで区別してください。",
+		"confirmDelete": "削除してもいいですか。"
+	},
+	"apiManager": {
+		"title": "外部APIの許可IPの設定",
+		"explain": {
+			"line1": "各外部APIの対して、許可IPを入力してください。複数のIPの場合、コンマで区別してください。",
+			"line2": "＊を入力すると、制限がありません。"
+		},
+		"confirmDelete": "削除してもいいですか。"
+	}
+}

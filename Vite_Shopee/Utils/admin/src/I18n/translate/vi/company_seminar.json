@@ -1,0 +1,37 @@
+{
+	"common": {
+		"seminar_title": "Tiêu đề",
+		"public": "Công khai",
+		"private": "Không công khai",
+		"all": "Tất cả",
+		"nissoken_only": "Chỉ Nissoken",
+		"company_only": "Chỉ công ty",
+		"nissoken": "ジョブナレ",
+		"seminar_title_input": "Tiêu đề hội thảo",
+		"live_link": "Link trực tuyến",
+		"live_password": "Mật khẩu",
+		"start_date": "Ngày giờ bắt đầu",
+		"end_date": "Ngày giờ kết thúc",
+		"photo_setting": "Thiết lập ảnh",
+		"public_setting": "Thiết lập công khai",
+		"description": "Giải thích",
+		"company_name": "Tên công ty "
+	},
+	"create": {
+		"title": "Đăng ký hội thảo"
+	},
+	"edit": {
+		"title": "Thay đổi hội thảo"
+	},
+	"management": {
+		"title": "Danh sách hội thảo",
+		"public_status": "Trạng thái công khai",
+		"Belonging": "Trực thuộc",
+		"create_seminar": "Đăng ký hội thảo mới",
+
+		"delete_line_1": "Có tập hợp lại và xóa {{number}} seminar đã chọn không?"
+	},
+	"validation": {
+		"range_date": "Ngày bắt đầu phải được xác định trước ngày kết thúc."
+	}
+}

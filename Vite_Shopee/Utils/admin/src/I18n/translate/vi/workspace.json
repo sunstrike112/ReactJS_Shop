@@ -1,0 +1,21 @@
+{
+	"title": "Quản lý không gian làm việc",
+	"create_button": "Tạo không gian làm việc",
+	"workspace_name": "Tên không gian làm việc",
+	"number_participants": "Số lượng người tham gia",
+	"list_admins": "Danh sách quản trị viên",
+	"created_date": "Ký tự trong mail",
+	"select_admin_nissoken": "Lựa chọn quản trị viên",
+	"create": {
+		"title": "Tạo mới không gian làm việc"
+	},
+	"edit": {
+		"title": "Chỉnh sửa không gian làm việc"
+	},
+	"message": {
+		"workspace_at_least_one": "Vui lòng chỉ định một hoặc nhiều quản trị viên.",
+		"warning_delete_message": "Bạn có chắc chắn muốn xóa không gian làm việc này?",
+		"created_date_required": "Ký tự trong mail là mục bắt buộc."
+	},
+	"workspace": "không gian làm việc"
+}

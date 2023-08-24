@@ -1,0 +1,7 @@
+{
+	"title": "アプリバージョン管理",
+	"ios_version": "iOSバージョン",
+	"ios_link": "iOS用のダウンロードリンク",
+	"android_version": "アンドロイドバージョン",
+	"android_link": "アンドロイド用のダウンロードリンク"
+}

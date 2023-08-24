@@ -1,0 +1,21 @@
+{
+	"title": "ワークスペース管理",
+	"create_button": "ワークスペースを登録する",
+	"workspace_name": "ワークスペース名",
+	"list_admins": "管理者の指定",
+	"created_date": "メールへの差し込み文字列",
+	"number_participants": "参加人数",
+	"select_admin_nissoken": "管理者の選択",
+	"create": {
+		"title": "ワークスペースの登録"
+	},
+	"edit": {
+		"title": "ワークスペースの編集"
+	},
+	"message": {
+		"workspace_at_least_one": "1名以上の管理者を指定してください。",
+		"warning_delete_message": "このワークスペースを削除してもよろしいですか?",
+		"created_date_required": "メールへの差し込み文字列は必須項目です。"
+	},
+	"workspace": "ワークスペース"
+}

@@ -1,0 +1,42 @@
+{
+	"title": "Register a lesson",
+	"edit_title": "Change a lesson",
+	"course_name": "Course",
+	"unit": "Unit",
+	"unit_details": "Unit details",
+	"displayType": "How to display a lesson screen",
+	"path": "Path",
+	"path_of_page": "Path of page",
+	"upload_or_refer_a_file": "Upload or refer a file",
+	"limit_on_attendance_start": "Limit on attendance period (start date and time)",
+	"limit_on_attendance_end": "Limit on attendance period (end date and time)",
+	"do_not_set_start": "Do not set (release since the course start date and time)",
+	"do_not_set_end": "Do not set (release until the course end date and time)",
+	"messageCompleted": "Completion message",
+	"estimatedStudyTime": "Estimated study time",
+	"specify_a_path": "Specify a path",
+	"release_since_start": "Release since",
+	"release_since_end": "",
+	"release_until_start": "Release until",
+	"type_path_file": "Path from upload file",
+	"type_path_youTube": "Path from youtube",
+	"type_path_external": "External URL",
+	"release_until_end": "",
+	"validation": {
+		"invalid_range_date": "The course end date and time is set before the course start date and time.",
+		"date_required": "Enter the date. (time can be omitted)",
+		"name_already_exists": "A course with the same name already exists"
+	},
+	"message": {
+		"confirm_create": "Will you register Lesson?",
+		"confirm_edit": "Will you change Lesson?"
+	},
+	"back_to_unit_setting": "Back to unit settings",
+	"is_not_system_link": "Please enter an upload link",
+	"is_not_youtube_link": "Please enter an Youtube link.",
+	"is_not_upload_file_link": "Please enter an external link.",
+	"explain_for_creating_on_webview_mode": "*Processing may take some time depending on the file size and communication speed, so please be patient.",
+	"type_file_image": "Image",
+	"type_file_default": "Default",
+	"type_title": "Type"
+}

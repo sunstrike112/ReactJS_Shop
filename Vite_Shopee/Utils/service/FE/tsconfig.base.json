@@ -1,0 +1,78 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ss-fe-fw/stores": ["apps/admin/src/stores/index.ts"],
+      "@ss-fe-fw/api": [
+        "apps/admin/src/api"
+      ],
+      "@ss-fe-fw/api/*": [
+        "apps/admin/src/api/*"
+      ],
+      "@ss-fe-fw/hooks": [
+        "apps/admin/src/hooks"
+      ],
+      "@ss-fe-fw/hooks/*": [
+        "apps/admin/src/hooks/*"
+      ],
+      "@ss-fe-fw/utils": [
+        "apps/admin/src/utils"
+      ],
+      "@ss-fe-fw/utils/*": [
+        "apps/admin/src/utils/*"
+      ],
+      "@ss-fe-fw/configs": ["apps/admin/src/configs/index.ts"],
+      "@ss-fe-fw/constants": ["apps/admin/src/constants/index.ts"],
+      "@ss-fe-fw/enums": ["apps/admin/src/enums/index.ts"],
+      "@ss-fe-fw/templates": ["apps/admin/src/components/templates/index.ts"],
+      "@ss-fe-fw/organisms": ["apps/admin/src/components/organisms/index.ts"],
+      "@ss-fe-fw/molecules": ["apps/admin/src/components/molecules/index.ts"],
+      "@ss-fe-fw/atoms": ["apps/admin/src/components/atoms/index.ts"],
+      "@ss-fe-fw/shared/ui": ["libs/shared/ui/src/index.ts"],
+      "@ss-fe-fw/admin/ui": ["libs/admin/ui/src/index.ts"],
+
+
+      "@ss-fe-fw/booking/stores": ["apps/booking-app/src/stores/index.ts"],
+      "@ss-fe-fw/booking/api": [
+        "apps/booking-app/src/api"
+      ],
+      "@ss-fe-fw/booking/api/*": [
+        "apps/booking-app/src/api/*"
+      ],
+      "@ss-fe-fw/booking/hooks": [
+        "apps/booking-app/src/hooks"
+      ],
+      "@ss-fe-fw/booking/hooks/*": [
+        "apps/booking-app/src/hooks/*"
+      ],
+      "@ss-fe-fw/booking/utils": [
+        "apps/booking-app/src/utils"
+      ],
+      "@ss-fe-fw/booking/utils/*": [
+        "apps/booking-app/src/utils/*"
+      ],
+      "@ss-fe-fw/booking/configs": ["apps/booking-app/src/configs/index.ts"],
+      "@ss-fe-fw/booking/constants": ["apps/booking-app/src/constants/index.ts"],
+      "@ss-fe-fw/booking/enums": ["apps/booking-app/src/enums/index.ts"],
+      "@ss-fe-fw/booking/templates": ["apps/booking-app/src/components/templates/index.ts"],
+      "@ss-fe-fw/booking/organisms": ["apps/booking-app/src/components/organisms/index.ts"],
+      "@ss-fe-fw/booking/molecules": ["apps/booking-app/src/components/molecules/index.ts"],
+      "@ss-fe-fw/booking/atoms": ["apps/booking-app/src/components/atoms/index.ts"],
+      "@ss-fe-fw/booking/admin/ui": ["libs/booking-app/ui/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

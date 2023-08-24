@@ -1,0 +1,18 @@
+Require nodejs LST (current is 14.15.4) version
+
+# install package
+npm install
+
+# development
+npm start
+
+# test
+npm test
+
+# production
+Create .env file at root project
+REACT_APP_BASE_API_URL=''
+
+and then run in order
+npm run build
+npm install -g serve & serve -s build (able to use another server like nginx, apache or nodejs,...)

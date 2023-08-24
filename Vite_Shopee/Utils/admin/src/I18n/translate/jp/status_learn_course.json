@@ -1,0 +1,33 @@
+{
+	"confirm_update": "チャンネルカテゴリを変更してもよろしいですか？",
+	"confirm_create": "チャンネルカテゴリを登録してもよろしいですか？",
+	"course_category_image": "チャンネルカテゴリ画像",
+	"course_category_name": "チャンネルカテゴリ名",
+	"parent_course_category_name": "親チャンネルカテゴリ名",
+	"select_parent_cateogry": "カテゴリを選択",
+	"register_course_category": "チャンネルカテゴリの登録",
+	"eidt_course_category": "チャンネルカテゴリの変更",
+	"delete_all": "まとめて削除する",
+	"register": "登録する",
+	"cancel": "クリア",
+	"button_register": "チャンネルカテゴリを作成する",
+	"selected_category": "{{amount}}件選択中",
+	"total_category": "全{{amount}}件",
+	"title": "(チャンネル）ユーザー別の修了状況",
+	"search_label": "チャンネルカテゴリ名",
+	"number_of_course": "チャンネル数",
+	"action": "操作",
+	"message_confirm_delete": "選択されたチャンネルカテゴリ{{amount}}件をまとめて削除しますか？",
+	"validate": {
+		"image_type": "\"{{imageName}}\"は無効なファイル形式です。\"image\"形式のファイルのみサポートしています",
+		"image_size": "ファイル\"{{imageName}}\" ({{imageSize}})はアップロード可能な上限容量10240 KBを超えています",
+		"duplicate_name": "同名のチャンネルカテゴリ名が、既に存在しています",
+		"empty_name": "チャンネルカテゴリ名は必須項目です。",
+		"same_category_selected": "親チャンネルカテゴリには自身と同じカテゴリは選択できません。",
+		"hierarchy_exceeds": "変更後の階層が2階層を超えています。"
+	},
+	"message": {
+		"create_success": "カテゴリーを作成しました。",
+		"edit_success": "カテゴリーを編集しました。"
+	}
+}

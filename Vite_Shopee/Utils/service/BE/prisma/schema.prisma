@@ -1,0 +1,557 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["selectRelationCount", "orderByRelation"]
+}
+
+// generator docs {
+//   provider = "node node_modules/prisma-docs-generator"
+//   output   = "../prisma-docs"
+// }
+
+// generator dto {
+//   provider     = "prisma-nestjs-dto-generator"
+//   output       = "../apps/api/src/generated"
+//   filenameCase = "kebab"
+//   dtoSuffix    = "Entity"
+//   classPrefix  = "Generated"
+// }
+
+// generator dbml {
+//   provider = "prisma-dbml-generator"
+//   output   = "../dbml"
+// }
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                               Int              @id @default(autoincrement())
+  email                            String           @unique
+  firstName                        String?
+  lastName                         String?
+  phoneNumber                      String?
+  addressLine1                     String?
+  addressLine2                     String?
+  state                            String?
+  suburb                           String?
+  postCode                         String?
+  password                         String?
+  provider                         Provider?         @default(local)
+  gender                           Gender?           @default(unknown)
+  currentHashedRefreshToken        String?
+  currentHashedForgotPasswordToken String?
+  emailVerifiedAt                  DateTime?
+  isTwoFactorAuthenticationEnabled Boolean?          @default(false)
+  twoFactorAuthenticationSecret    String?
+  isActive                         Boolean?         @default(true)
+  createdAt                        DateTime         @default(now())
+  updatedAt                        DateTime         @updatedAt
+  deletedAt                        DateTime?
+
+  roles                            Role[]
+  news                             News[]
+  userPermissions                  UserPermission[]
+  userDefaultPermissions           UserDefaultPermission[]
+  organizations                    Organization[]
+  capacity                         Capacity?
+
+  @@index([firstName, lastName, isActive])
+}
+
+model Customer {
+  id                               Int              @id @default(autoincrement())
+  email                            String           @unique
+  firstName                        String?
+  lastName                         String?
+  phoneNumber                      String?
+  addressLine1                     String?
+  addressLine2                     String?
+  state                            String?
+  suburb                           String?
+  postCode                         String?
+  nrma                             String?
+  companyName                      String?
+  password                         String?
+  provider                         Provider?         @default(local)
+  gender                           Gender?           @default(unknown)
+  currentHashedRefreshToken        String?
+  currentHashedForgotPasswordToken String?
+  emailVerifiedAt                  DateTime?
+  note                             String?
+  isActive                         Boolean?         @default(true)
+  createdAt                        DateTime         @default(now())
+  updatedAt                        DateTime         @updatedAt
+  deletedAt                        DateTime?
+
+  bookings                         Booking[]
+  vehicles                         Vehicle[]
+
+  @@index([firstName, lastName, isActive])
+}
+
+model Role {
+  id             Int           @id @default(autoincrement())
+  name           String
+  code           String        @unique 
+  level          Int
+  isActive       Boolean?      @default(true)
+  isGlobal       Boolean?      @default(false)
+  isDefault      Boolean?      @default(false)
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  deletedAt      DateTime?
+
+  users          User[]
+  rolePermission RolePermission?
+  userPermissions UserPermission[]
+
+  @@index([name, isActive])
+}
+
+model RolePermission {
+  id             Int           @id @default(autoincrement())
+  roleId         Int?          @unique
+  role           Role?         @relation(fields: [roleId], references: [id])
+  permissions    Json?
+}
+
+model UserDefaultPermission {
+  id             Int           @id @default(autoincrement())
+  user           User?         @relation(fields: [userId], references: [id])
+  userId         Int? // relation scalar field (used in the `@relation` attribute above)
+  organization   Organization? @relation(fields: [organizationId], references: [id])
+  organizationId Int?
+  permissions    Json?
+
+  @@unique([userId, organizationId])
+}
+
+model UserPermission {
+  id             Int           @id @default(autoincrement())
+  user           User?         @relation(fields: [userId], references: [id])
+  userId         Int? // relation scalar field (used in the `@relation` attribute above)
+  organization   Organization? @relation(fields: [organizationId], references: [id])
+  organizationId Int?
+  role           Role?         @relation(fields: [roleId], references: [id])
+  roleId         Int?
+  permissions    Json?
+  forbidden      Json?
+
+  @@unique([userId, organizationId, roleId])
+}
+
+model News {
+  id    String  @id @default(uuid())
+  title          String
+  slug           String?
+  content        String?
+  authorId       Int?
+  published      Boolean?      @default(false)
+  author         User?         @relation(fields: [authorId], references: [id])
+  organizationId Int?
+  organization   Organization? @relation(fields: [organizationId], references: [id])
+  price          Float?
+  rating         Float?
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  deletedAt      DateTime?
+
+  @@index([title])
+}
+
+enum Gender {
+  male
+  female
+  unknown
+}
+
+enum Provider {
+  local
+  google
+  cognito
+  facebook
+  aad
+}
+
+model Suburb {
+  id              Int    @id @default(autoincrement())
+  suburb          String
+  postCode        String
+  stateSuburbCode String @unique
+  stateIsoCode    String
+  stateName       String
+  urbanArea       String
+  latitude        Float
+  longitude       Float
+  timezone        String
+
+  @@index([postCode])
+}
+
+model Organization {
+  id                 Int              @id @default(autoincrement())
+  name               String
+  abc                String?
+  acn                String?
+  contactFirstName   String?
+  contactLastName    String?
+  contactPhoneNumber String?
+  contactEmail       String?
+  addressLine1       String?
+  addressLine2       String?
+  state              String?
+  postCode           String?
+  suburb             String?
+  latitude           Float?
+  longitude          Float?
+  timezone           String?
+  isActive           Boolean?         @default(true)
+  parentId           Int?
+  parent             Organization?    @relation("OrganizationToOrganization", fields: [parentId], references: [id])
+  type               OrganizationType @default(servicecentre)
+  createdAt          DateTime         @default(now())
+  updatedAt          DateTime         @updatedAt
+  deletedAt          DateTime?
+  children           Organization[]   @relation("OrganizationToOrganization")
+
+  news               News[]
+  users              User[]
+  userPermissions    UserPermission[]
+  userDefaultPermissions UserDefaultPermission[]
+  operatingHour      OperatingHour?
+  promotionCodes     PromotionCode[]
+  capacities         Capacity[]
+  services           Service[]
+  bookings           Booking[]
+
+  generalEnquiries   GeneralEnquiry[]
+
+  @@index([name, parentId])
+}
+
+enum Action {
+  manage
+  create
+  read
+  update
+  delete
+}
+
+model Resource {
+  id             Int                   @id @default(autoincrement())
+  name           String
+  code           String                @unique
+  groupName      String?
+  disabledActions Action[]
+  isGlobal       Boolean?              @default(false)
+  order          Int?
+}
+
+enum OrganizationType {
+  company
+  servicecentre
+}
+
+enum GlobalSettingType {
+  operatingHour
+  operatingHourException
+}
+
+model GlobalSetting {
+  id             Int                   @id @default(autoincrement())
+  setting        Json?
+  settingType    GlobalSettingType     @unique
+
+  createdAt      DateTime              @default(now())
+  updatedAt      DateTime              @updatedAt
+  deletedAt      DateTime?
+
+  @@index([settingType])
+}
+
+model OperatingHour {
+  id                  Int                   @id @default(autoincrement())
+  schedule            Json?
+  exception           Json?
+
+  organization        Organization          @relation(fields: [organizationId], references: [id])
+  organizationId      Int                   @unique
+
+  createdAt           DateTime              @default(now())
+  updatedAt           DateTime              @updatedAt
+
+  @@index([organizationId])
+}
+
+enum BookingStatus {
+  bookedIn
+  checkedIn
+  completed
+  cancelled
+}
+
+model Booking {
+  id                         Int                   @id @default(autoincrement())
+  customer                   Customer              @relation(fields: [customerId], references: [id])
+  customerId                 Int
+  vehicle                    Vehicle               @relation(fields: [vehicleId], references: [id])
+  vehicleId                  Int
+  organization               Organization          @relation(fields: [organizationId], references: [id])
+  organizationId             Int
+  appointment                DateTime
+  status                     BookingStatus         @default(bookedIn)
+  isShuttleServiceRequired   Boolean?              @default(false)
+  isAfterHoursKeyDropOff     Boolean?              @default(false)
+  promotionCode              PromotionCode?        @relation(fields: [promotionCodeId], references: [id])
+  promotionCodeId            Int?
+  note                       String?
+
+  isActive                   Boolean?              @default(true)
+  createdAt                  DateTime              @default(now())
+  updatedAt                  DateTime              @updatedAt
+  deletedAt                  DateTime?
+
+  bookingServices            BookingService[]
+
+  @@index([organizationId])
+}
+
+model BookingService {
+  id                         Int                   @id @default(autoincrement())
+  note                       String?
+
+  service                    Service               @relation(fields: [serviceId], references: [id])
+  serviceId                  Int
+  booking                    Booking               @relation(fields: [bookingId], references: [id])
+  bookingId                  Int
+
+  bookingPackages            BookingPackage[]
+
+  @@index([bookingId])
+  @@unique([serviceId, bookingId])
+}
+
+model BookingPackage {
+  id                         Int                   @id @default(autoincrement())
+
+  bookingService             BookingService       @relation(fields: [bookingServiceId], references: [id]) 
+  bookingServiceId           Int
+
+  package                    Package       @relation(fields: [packageId], references: [id])
+  packageId                  Int
+
+  @@index([bookingServiceId])
+  @@unique([bookingServiceId, packageId])
+}
+
+model Vehicle {
+  id                         Int                   @id @default(autoincrement())
+  slId                       String?
+  rego                       String
+  state                      String
+  make                       String
+  model                      String
+  variant                    String?
+  year                       Int?
+  color                      String?
+  transmission               String?
+  cylinder                   String?
+
+  customer                   Customer              @relation(fields: [customerId], references: [id])
+  customerId                 Int
+
+  isActive                   Boolean?              @default(true)
+  createdAt                  DateTime              @default(now())
+  updatedAt                  DateTime              @updatedAt
+  deletedAt                  DateTime?
+
+  bookings                   Booking[]
+
+  @@index([customerId])
+}
+
+enum SelectType {
+  single
+  multiple
+}
+
+model GlobalService {
+  id                         Int                   @id @default(autoincrement())
+  name                       String                @unique
+  image                      String?
+  description                String?
+  selectType                 SelectType            @default(single)
+  order                      Int?
+
+  isActive                   Boolean?              @default(true)
+  createdAt                  DateTime              @default(now())
+  updatedAt                  DateTime              @updatedAt
+  deletedAt                  DateTime?
+
+  globalPackages             GlobalPackage[]
+  services                   Service[]
+}
+
+model Service {
+  id                         Int                   @id @default(autoincrement())
+  name                       String        
+  image                      String?
+  description                String?
+  selectType                 SelectType            @default(single)
+  order                      Int?
+
+  globalService              GlobalService         @relation(fields: [globalServiceId], references: [id])
+  globalServiceId            Int
+  organization               Organization          @relation(fields: [organizationId], references: [id])
+  organizationId             Int
+
+  isActive                   Boolean?              @default(true)
+  createdAt                  DateTime              @default(now())
+  updatedAt                  DateTime              @updatedAt
+  deletedAt                  DateTime?
+
+  packages                   Package[]
+  bookingServices            BookingService[]
+
+  @@unique([name, organizationId])
+}
+
+model GlobalPackage {
+  id                         Int                   @id @default(autoincrement())
+  name                       String
+  outlinedImage              String?
+  solidImage                 String?
+  description                String?
+  jobCode                    String
+  estHours                   Float
+  estValue                   Float
+  order                      Int?
+
+  globalService              GlobalService         @relation(fields: [globalServiceId], references: [id])
+  globalServiceId            Int
+
+  isActive                   Boolean?              @default(true)
+  createdAt                  DateTime              @default(now())
+  updatedAt                  DateTime              @updatedAt
+  deletedAt                  DateTime?
+
+  packages                   Package[]
+
+  @@index([globalServiceId])
+  @@unique([name, globalServiceId])
+}
+
+model Package {
+  id                         Int                   @id @default(autoincrement())
+  name                       String
+  outlinedImage              String?
+  solidImage                 String?
+  description                String?
+  jobCode                    String
+  estHours                   Float
+  estValue                   Float
+  order                      Int?
+
+  service                    Service               @relation(fields: [serviceId], references: [id])
+  serviceId                  Int
+  globalPackage              GlobalPackage         @relation(fields: [globalPackageId], references: [id])
+  globalPackageId            Int
+
+  isActive                   Boolean?              @default(true)
+  createdAt                  DateTime              @default(now())
+  updatedAt                  DateTime              @updatedAt
+  deletedAt                  DateTime?
+
+  bookingPackages            BookingPackage[]
+
+  @@index([serviceId])
+  @@unique([name, serviceId])
+}
+
+model GlobalPromotionCode {
+  id                         Int                    @id @default(autoincrement())
+  name                       String
+  description                String?
+  promoCode                  String                 @unique
+  startDate                  DateTime
+  endDate                    DateTime
+
+  isActive                   Boolean?               @default(true)
+  createdAt                  DateTime               @default(now())
+  updatedAt                  DateTime               @updatedAt
+  deletedAt                  DateTime?
+
+  promotionCodes             PromotionCode[]
+}
+
+model PromotionCode {
+  id                         Int                    @id @default(autoincrement())
+  name                       String
+  description                String?
+  promoCode                  String
+  startDate                  DateTime
+  endDate                    DateTime
+
+  globalPromotionCode        GlobalPromotionCode?   @relation(fields: [globalPromotionCodeId], references: [id])
+  globalPromotionCodeId      Int?
+  organization               Organization           @relation(fields: [organizationId], references: [id])
+  organizationId             Int
+
+  isActive                   Boolean?               @default(true)
+  createdAt                  DateTime               @default(now())
+  updatedAt                  DateTime               @updatedAt
+  deletedAt                  DateTime?
+
+  bookings                   Booking[]
+
+  @@index([organizationId])
+  @@unique([promoCode, organizationId])
+}
+
+model GlobalCapacity {
+  id                         Int                    @id @default(autoincrement())
+  name                       String                 @unique
+  availableTime              Json?
+  breakTime                  Json?
+
+  createdAt                  DateTime               @default(now())
+  updatedAt                  DateTime               @updatedAt
+
+  capacities                 Capacity[]
+}
+
+model Capacity {
+  id                         Int                    @id @default(autoincrement())
+  exception                  Json?
+
+  globalCapacity             GlobalCapacity         @relation(fields: [globalCapacityId], references: [id])
+  globalCapacityId           Int
+  technician                 User                   @relation(fields: [technicianId], references: [id])
+  technicianId               Int
+  organization               Organization           @relation(fields: [organizationId], references: [id])
+  organizationId             Int
+
+  createdAt                  DateTime               @default(now())
+  updatedAt                  DateTime               @updatedAt
+
+  @@index([organizationId])
+  @@unique([globalCapacityId, technicianId, organizationId])
+}
+
+model GeneralEnquiry {
+  id                         Int                    @id @default(autoincrement())
+  organization               Organization           @relation(fields: [organizationId], references: [id])
+  organizationId             Int
+  firstName                  String
+  lastName                   String
+  phoneNumber                String?
+  email                      String
+  postCode                   String?
+  suburb                     String?
+  enquiry                    String
+
+  createdAt                  DateTime               @default(now())
+  updatedAt                  DateTime               @updatedAt
+}

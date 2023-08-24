@@ -1,0 +1,24 @@
+import React, { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+
+import { useInjectReducer, useInjectSaga } from 'Stores'
+import saga from '../store/saga'
+import reducer from '../store/reducer'
+import { loadRepos } from '../store/actions'
+
+const TeachingMaterialsScreen = () => {
+  useInjectSaga({ key: 'testSaga', saga })
+  useInjectReducer({ key: 'testSaga', reducer })
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(loadRepos())
+  }, [])
+
+  return (
+    <>
+      this is landing screen
+    </>
+  )
+}
+
+export default TeachingMaterialsScreen

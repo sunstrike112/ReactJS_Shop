@@ -1,0 +1,9 @@
+{
+  "course_category_name": "Course category name",
+  "course_name": "Course name",
+  "auto_assignment": "You can see it without issuing authority",
+  "except_course": "Not applicable to the following channels",
+  "title": "Selection of assignment course",
+  "course_type": "Course type",
+  "message_confirm_delete": "Are you sure you want to delete the {{amount}} selected Course(s)?"
+}

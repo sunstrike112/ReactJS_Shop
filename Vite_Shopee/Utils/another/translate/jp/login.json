@@ -1,0 +1,11 @@
+{
+  "welcome": "Microsoftのアカウントでログイン",
+  "sign_in": "ログイン",
+  "remember_me": "自動ログイン",
+  "reset_password": "パスワードを忘れた場合",
+  "password_reset": "パスワードリセット",
+  "send_mail": "メールを送る",
+  "back_to_sign_in": "ログインに戻る",
+  "change_new_password": "新しいパスワードを変更",
+  "describe_change_password": "新しいパスワードは以前のパスワードとは異なる必要があります。"
+}

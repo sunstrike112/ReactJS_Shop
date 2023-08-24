@@ -1,0 +1,23 @@
+{
+	"externalApi": {
+		"title": "Danh sách các API liên kết bên ngoài",
+		"createButton": "Đăng ký thông tin API",
+		"externalApi": "API liên kết bên ngoài",
+		"confirmDelete": "Bạn có chắc chắc muốn xoá nó?"
+	},
+	"externalIp": {
+		"title": "Địa chỉ IP cho liên kết bên ngoài",
+		"ipAddress": "Địa chỉ IP",
+		"explain": "Nhập IP được phép cho từng API bên ngoài. Đối với nhiều IP, hãy phân tách chúng bằng dấu phẩy.",
+		"confirmDelete": "Bạn có chắc chắc muốn xoá nó?"
+	},
+	"apiManager": {
+		"title": "Đặt IP được phép cho API bên ngoài",
+		"explain": {
+			"line1": "Nhập IP được phép cho từng API bên ngoài. Đối với nhiều IP, hãy phân tách chúng bằng dấu phẩy.",
+			"line2": "Nếu bạn nhập *, không có giới hạn."
+		},
+		"confirmDelete": "Bạn có chắc chắc muốn xoá nó?"
+	}
+}
+

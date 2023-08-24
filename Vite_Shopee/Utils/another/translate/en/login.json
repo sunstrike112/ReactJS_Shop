@@ -1,0 +1,11 @@
+{
+  "welcome": "Microsoftのアカウントでログイン",
+  "sign_in": "Sign in",
+  "remember_me": "Remember me",
+  "reset_password": "If you forgot your password",
+  "password_reset": "Reset password",
+  "send_mail": "Send an email",
+  "back_to_sign_in": "Back to sign in",
+  "change_new_password": "Change new password",
+  "describe_change_password": "The new password must be different from the previous one."
+}

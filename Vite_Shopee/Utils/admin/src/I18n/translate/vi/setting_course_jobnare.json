@@ -1,0 +1,9 @@
+{
+  "course_category_name": "Tên danh mục khóa học",
+  "course_name": "Tên khoá học",
+  "auto_assignment": "Tự động cấp quyền",
+  "except_course": "Ngoại trừ các khoá học sau",
+  "title": "Lựa chọn khóa học chuyển nhượng",
+  "course_type": "Loại khoá học",
+  "message_confirm_delete": "Có tập hợp lại và xóa {{amount}} khóa học đã được chọn không?"
+}

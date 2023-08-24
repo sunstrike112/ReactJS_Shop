@@ -1,0 +1,21 @@
+{
+  "title": "Workspace management",
+  "create_button": "Create workspace",
+  "workspace_name": "Workspace name",
+  "list_admins": "List admins nissoken",
+  "created_date": "Mail merge",
+  "number_participants": "Number of participants",
+  "select_admin_nissoken": "Choose administrator",
+  "create": {
+    "title": "Create workspace"
+  },
+  "edit": {
+    "title": "Edit workspace"
+  },
+  "message": {
+    "workspace_at_least_one": "Please specify one or more administrators.",
+    "warning_delete_message": "Are you sure you want to delete this workspace?",
+    "created_date_required": "Mail merge cannot be blank."
+  },
+  "workspace": "workspace"
+}

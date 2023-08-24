@@ -1,0 +1,8 @@
+{
+  "title": "Whitelist settings",
+  "domain": "Domain",
+  "explain": "Email addresses using the domain installed in the Whitelist can be registered in the same domain as the registered account.",
+  "explain_input_domain": "Enter domain name to add to Whitelist",
+  "white_list": "Whitelist",
+  "warning_delete_domain": "Are you sure you want to delete this domain?"
+}

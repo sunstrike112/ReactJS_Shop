@@ -1,0 +1,7 @@
+{
+	"setting_maintain": "Maintenance Settings",
+	"maintenance": "Maintenance",
+	"maintenance_notice": "Maintenance notice",
+	"special_user": "Special user",
+	"special_user_guide": "No special user is forced to log out when the system goes into maintenance. Enter a special user using the user's email or loginId. If you enter multiple addresses, separate them with commas."
+}

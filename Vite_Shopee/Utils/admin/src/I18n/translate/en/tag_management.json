@@ -1,0 +1,10 @@
+{
+	"create_button": "Create tag",
+	"tag_name": "Tag name",
+	"create_title": "Tag registration",
+	"edit_title": "Change the tag",
+	"delete_title": "Delete the tag",
+	"create_confirm": "Will you register the tag ?",
+	"edit_confirm": "Will you change the tag ?",
+	"message_confirm_delete": "Will you delete all {{amount}} selected tag(s)?"
+}

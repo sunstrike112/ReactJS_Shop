@@ -1,0 +1,39 @@
+{
+	"title": "動画の登録",
+	"edit_title": "動画の変更",
+	"course_name": "チャンネル",
+	"unit": "番組",
+	"unit_details": "番組詳細",
+	"displayType": "動画画面の表示方法",
+	"path": "ファイルのパスを指定する",
+	"path_of_page": "ページ目のパス",
+	"upload_or_refer_a_file": "ファイルをアップロード・参照する",
+	"limit_on_attendance_start": "受講期間の制限(開始日時)",
+	"limit_on_attendance_end": "受講期間の制限(終了日時)",
+	"do_not_set_start": "設定しない(開講日時から公開)",
+	"do_not_set_end": "設定しない(閉講日時まで公開)",
+	"messageCompleted": "修了メッセージ",
+	"estimatedStudyTime": "学習目安時間",
+	"specify_a_path": "ファイルのパスを指定する",
+	"release_since_start": "",
+	"release_since_end": "から公開",
+	"release_until_start": "",
+	"release_until_end": "まで公開",
+	"type_path_file": "ファイルパス",
+	"type_path_youTube": "YouTubeからのパス",
+	"type_path_external": "外部のURL",
+	"validation": {
+		"invalid_range_date": "閉講日時が開講日時以前に指定されています。",
+		"date_required": "日付を入力してください。(時刻は省略できます)",
+		"name_already_exists": "同名のチャンネルが、既に存在しています"
+	},
+	"message": {
+		"confirm_create": "動画を登録してもよろしいですか？",
+		"confirm_edit": "動画を変更してもよろしいですか？"
+	},
+	"back_to_unit_setting": "番組設定に戻る",
+	"is_not_system_link": "アップロードした動画のリンクを入力してください。",
+	"is_not_youtube_link": "Youtubeのリンクを入力してください。",
+	"is_not_upload_file_link": "外部リンクを入力してください。",
+	"explain_for_creating_on_webview_mode": "*ファイルの容量や通信速度により、処理する時間がかかる場合もありますので、少々お待ちください。"
+}

@@ -1,0 +1,25 @@
+{
+	"title": "Thiết lập Cài đặt gán tự động (khóa học)",
+	"auto_assignment_settings": "Cài đặt gán tự động",
+	"register_auto_assignment": "Đăng ký cài đặt gán tự động",
+	"status": "Trạng thái",
+	"target_group": "Nhóm đối tượng",
+	"target_attribute": "Thuộc tính đối tượng",
+	"target_range": "Phạm vi mục tiêu",
+	"required_course": "Tùy ý/ Bắt buộc tham gia học",
+	"course_start_time": "Ngày giờ khai giảng",
+	"course_end_time": "Ngày giờ bế giảng",
+	"create_automatic": {
+		"title": "Nhiệm vụ tự động đăng ký (tất nhiên)",
+		"condition_specification": "Đặc điểm kỹ thuật",
+		"everyone": "Tất cả mọi người",
+		"reject_delete_course": "Bạn không thể xóa tất cả các khóa học tự động được giao."
+	},
+	"select_course": {
+		"title": "Lựa chọn khóa học chuyển nhượng",
+		"course_type": "Loại khoá học"
+	},
+	"update_automatic": {
+		"title": "Nhiệm vụ tự động thay đổi (tất nhiên)"
+	}
+}

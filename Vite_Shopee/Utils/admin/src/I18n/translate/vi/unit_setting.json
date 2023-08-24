@@ -1,0 +1,155 @@
+{
+	"title": "Cài đặt bài học",
+	"course": "Khoá học",
+	"unit": "Bài học",
+	"views": "Số lượt xem",
+	"num_of_viewers": "Số người xem",
+	"unit_detail": "Chi tiết bài học",
+	"register_test": "Đăng kí bài kiểm tra",
+	"message_complete": "Tin nhắn hoàn thành",
+	"estimate_study": "Thời gian học dự kiến",
+	"basic_info": "Thông tin cơ bản",
+	"limit_start_date": "Hạn chế thời hạn tham gia học (ngày giờ bắt đầu)",
+	"limit_end_date": "Hạn chế thời hạn tham gia học (ngày giờ kết thúc)",
+	"none": "Không",
+	"register_unit": "Đăng kí bài học mới",
+	"unit_settings": "Unit settings",
+	"course_name": "Bài học",
+	"update_order": "Cập nhật thứ tự sắp xếp",
+	"delete_all": "Delete all",
+	"question_confirm_amount_start": "Bạn có chắc chắn muốn xóa",
+	"question_confirm_amount_end": "record(s) đã được chọn không?",
+	"question_confirm_warning": "Nếu bạn xóa Bài học dữ liệu sau cũng sẽ bị xóa cùng một lúc và nó sẽ không được phục hồi.",
+	"question_confirm_warning_first": "- Quyền tham gia bài học đó (người dùng sẽ không thể tham gia học bài học).",
+	"question_confirm_warning_second": "- Lịch sử tham gia bài học đó (không thể xem hoặc tải về lịch sử tham gia học của người dùng).",
+	"unitTypeName": "Loại bài học",
+	"minutes": "{{ number }} phút",
+	"back_test_details": "Quay về chi tiết bài kiểm tra",
+	"report_question_list": "Báo cáo danh sách câu hỏi",
+	"filter": {
+		"no_category": "Không có danh mục",
+		"course_name": "Khóa học"
+	},
+	"detail": {
+		"title": "Chi tiết bài kiểm tra",
+		"label_limit_start_date": "Không cài đặt (công khai cho đến ngày giờ khai giảng)",
+		"label_limit_end_date": "Không cài đặt (công khai cho đến ngày giờ bế giảng)",
+		"question_settings": "Cài đặt ra đề",
+		"option_settings": "Cài đặt lựa chọn",
+		"number_of_question": "Số lượng câu hỏi",
+		"number_of_question_count": "{{ number }} câu ( số lượng đăng ký {{ number }} câu)",
+		"passing_score": "Điểm đạt",
+		"passing_score_count": "{{ pointPass }} điểm/ {{ totalPoint }} điểm tuyệt đối",
+		"full_marks": "Điểm tối đa",
+		"set_item": "Hãy cài đặt",
+		"total_allocated_points": "Tổng điểm phân bố",
+		"time_limit": "Thời gian giới hạn",
+		"limit_number": "Giới hạn về số lượng",
+		"back_unit_settings": "Quay lại cài đặt bài học",
+		"release_since": "Công khai kể từ",
+		"release_until": "Công khai cho đến",
+		"date": "Ngày",
+		"time": "Giờ",
+		"release_since_value": "Công khai kể từ {{ time }}",
+		"release_until_value": "Công khai cho đến {{ time }}",
+		"submit_deadline": "Thời hạn nộp bài",
+		"do_not_set_deadline": "Không cài đặt (không hết hạn)",
+		"submitted_until": "Có thể nộp cho đến",
+		"submitted_until_value": "Có thể nộp cho đến {{ time }}",
+		"answerTitle": "Trả lời",
+		"isAnswerDisplay": "Hiển thị",
+		"isAnswerHidden": "Ẩn"
+	},
+	"basic_info_setting": {
+		"title": "Cài đặt thông tin cơ bản",
+		"confirm_change": "Thay đổi Kiểm tra được chứ ?",
+		"show_answer": "Hiển thị câu trả lời"
+	},
+	"register_test_screen": {
+		"confirm_register": "Bạn có muốn đăng ký Kiểm tra không?"
+	},
+	"validate": {
+		"duplicate_unit": "Đã tồn tại bài học có cùng tên trong khóa học.",
+		"wrong_limitEndDate": "Ngày bế giảng phải được xác định sau ngày khai giảng.",
+		"required_limitDate": "Hãy nhập ngày. (có thể bỏ giờ phút)",
+		"limit_time": "Thời gian giới hạn không được lớn hơn {{ time }}."
+	},
+	"registration_unit_setting": {
+		"sort": {
+			"title": "Cập nhật thứ tự sắp xếp",
+			"index": "No.",
+			"sort": "Update",
+			"courseName": "Course name"
+		}
+	},
+	"question_setting": {
+		"title": "Cài đặt ra đề",
+		"test_question_category": "Danh mục câu hỏi bài kiểm tra",
+		"question_type": "Loại câu hỏi",
+		"question_text": "Nội dung câu hỏi",
+		"question_code": "Mã quản lý câu hỏi",
+		"create_question": "Tạo câu hỏi",
+		"single_choice": "Chọn một",
+		"multiple_choice": "Chọn nhiều",
+		"description_choice": "Kiểu mô tả",
+		"point_allocation": "Phân bố điểm",
+		"confirm_delete": "Bạn có muốn xóa câu hỏi đã chọn hoặc đặt toàn bộ câu hỏi ngẫu nhiên {{ number }} cùng một lúc?",
+		"update_score_success": "Thay đổi số điểm đạt của bài kiểm tra thành công"
+	},
+	"create_survey": {
+		"title": "Tạo một cuộc khảo sát",
+		"unit_survey_name": "Bài học",
+		"unit_survey_detail": "Chi tiết bài học",
+		"question_setting": "Cài đặt câu hỏi",
+		"select_question": "Xác nhận/ thay đổi câu hỏi",
+		"create_question": "Tạo câu hỏi",
+		"confirm_register": "Bạn có muốn đăng ký Phiếu điều tra không?"
+	},
+	"edit_survey": {
+		"title": "Thay đổi cuộc khảo sát",
+		"unit_survey_name": "Bài học",
+		"unit_survey_detail": "Chi tiết bài học",
+		"question_setting": "Cài đặt câu hỏi",
+		"select_question": "Xác nhận/ thay đổi câu hỏi",
+		"create_question": "Tạo câu hỏi",
+		"confirm_change": "Thay đổi Phiếu điều tra được chứ ?"
+	},
+	"unit_survey_question": {
+		"management": {
+			"title": "Danh sách câu hỏi bảng câu hỏi",
+			"create_question": "Tạo câu hỏi",
+			"question_text": "Đoạn văn câu hỏi",
+			"question_type": "Loại câu hỏi",
+			"confirm_question": "Quyết định câu hỏi",
+			"confirm_delete": "Bạn có muốn xóa {{number}} câu hỏi đã chọn không?"
+		},
+		"create": {
+			"title": "Đăng ký Câu hỏi bảng câu hỏi",
+			"back_to_list": "Quay về danh sách câu hỏi phiếu điều tra",
+			"optional_or_required_answer": "Tùy ý/ Bắt buộc trả lời",
+			"question_text": "Đoạn văn câu hỏi",
+			"question_type": "Loại câu hỏi",
+			"choice": "Tuỳ chọn{{index}}",
+			"warning_submit_message": "Bạn có muốn đăng ký Câu hỏi phiếu điều tra không?"
+		},
+		"edit": {
+			"title": "Thay đổi câu hỏi bảng câu hỏi",
+			"back_to_list": "Quay về danh sách câu hỏi phiếu điều tra",
+			"optional_or_required_answer": "Tùy ý/ Bắt buộc trả lời",
+			"question_text": "Đoạn văn câu hỏi",
+			"question_type": "Loại câu hỏi",
+			"choice": "Tuỳ chọn{{index}}",
+			"warning_submit_message": "Thay đổi Câu hỏi phiếu điều tra được chứ?"
+		},
+		"necessary_level_option": {
+			"optional": "Tuỳ ý",
+			"required": "Bắt buộc"
+		},
+		"question_type_option": {
+			"single": "Chọn một",
+			"multiple": "Chọn nhiều",
+			"description": "Kiểu mô tả"
+		}
+	},
+	"back_to_unit_setting": "Quay lại cài đặt bài học"
+}

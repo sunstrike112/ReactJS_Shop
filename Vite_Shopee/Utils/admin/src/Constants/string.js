@@ -1,0 +1,6 @@
+export const LECTURES_FILES = 'Lectures files'
+export const VIDEO_RECORDING = 'Video recording'
+export const FILE_SMARTPHONE = 'スマホ用ファイル'
+export const RECORDING = 'recording'
+export const FOLDER_KEYFILE = 'VIDEO_RECORDING'
+export const MARK_SPLIT = ' > '

@@ -1,0 +1,48 @@
+import { GeneratedNewsEntity } from "./news.dto";
+import { GeneratedUserEntity } from "./user.dto";
+import { GeneratedUserPermissionEntity } from "./user-permission.dto";
+import { GeneratedUserDefaultPermissionEntity } from "./user-default-permission.dto";
+import { GeneratedOperatingHourEntity } from "./operating-hour.dto";
+import { GeneratedPromotionCodeEntity } from "./promotion-code.dto";
+import { GeneratedCapacityEntity } from "./capacity.dto";
+import { GeneratedServiceEntity } from "./service.dto";
+import { GeneratedBookingEntity } from "./booking.dto";
+import { GeneratedGeneralEnquiryEntity } from "./general-enquiry.dto";
+import { GeneratedOrganizationType } from "./organization-type.enum";
+
+export class GeneratedOrganizationEntity {
+  id: number;
+  name: string;
+  abc?: string;
+  acn?: string;
+  contactFirstName?: string;
+  contactLastName?: string;
+  contactPhoneNumber?: string;
+  contactEmail?: string;
+  addressLine1?: string;
+  addressLine2?: string;
+  state?: string;
+  postCode?: string;
+  suburb?: string;
+  latitude?: number;
+  longitude?: number;
+  timezone?: string;
+  isActive?: boolean;
+  parentId?: number;
+  parent?: GeneratedOrganizationEntity;
+  type: GeneratedOrganizationType;
+  createdAt: Date;
+  updatedAt: Date;
+  deletedAt?: Date;
+  children: GeneratedOrganizationEntity[];
+  news: GeneratedNewsEntity[];
+  users: GeneratedUserEntity[];
+  userPermissions: GeneratedUserPermissionEntity[];
+  userDefaultPermissions: GeneratedUserDefaultPermissionEntity[];
+  operatingHour?: GeneratedOperatingHourEntity;
+  promotionCodes: GeneratedPromotionCodeEntity[];
+  capacities: GeneratedCapacityEntity[];
+  services: GeneratedServiceEntity[];
+  bookings: GeneratedBookingEntity[];
+  generalEnquiries: GeneratedGeneralEnquiryEntity[];
+}

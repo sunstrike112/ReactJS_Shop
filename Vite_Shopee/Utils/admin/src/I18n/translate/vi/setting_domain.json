@@ -1,0 +1,8 @@
+{
+  "title": "Cài đặt whitelist",
+  "domain": "Miền",
+  "explain": "Địa chỉ email sử dụng domain được cài đặt trong Whitelist có thể được đăng ký trong cùng domain với tài khoản đã đăng ký.",
+  "explain_input_domain": "Nhập tên domain để thêm vào Whitelist",
+  "white_list": "Danh sách trắng",
+  "warning_delete_domain": "Bạn có chắc chắn muốn xóa miền này?"
+}

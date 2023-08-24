@@ -1,0 +1,21 @@
+export interface Store {
+  id: number,
+  name: string,
+  abc: string,
+  acn: string,
+  contactFirstName: string,
+  contactLastName: string,
+  contactPhoneNumber: string,
+  contactEmail: string,
+  addressLine1: string,
+  addressLine2: string,
+  state: string,
+  postCode: number,
+  suburb: string,
+  latitude: number,
+  longitude: number,
+  timezone: number,
+  isActive: boolean,
+  parentId: number,
+  type: string
+}

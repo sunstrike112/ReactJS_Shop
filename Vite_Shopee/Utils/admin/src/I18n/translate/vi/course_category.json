@@ -1,0 +1,33 @@
+{
+	"confirm_update": "Thay đổi Danh mục khóa học được chứ ?",
+	"confirm_create": "Bạn có muốn đăng ký Danh mục khóa học không?",
+	"course_category_image": "Hình ảnh danh mục khóa học",
+	"course_category_name": "Danh mục khóa học",
+	"parent_course_category_name": "Tên danh mục khóa học gốc",
+	"select_parent_cateogry": "Chọn danh mục",
+	"register_course_category": "Đăng kí danh mục khóa học",
+	"eidt_course_category": "Thay đổi danh mục khóa học",
+	"delete_all": "Tổng hợp rồi xóa",
+	"register": "Đăng ký",
+	"cancel": "Xóa",
+	"button_register": "Tạo danh mục khóa học",
+	"selected_category": "{{amount}} bản ghi đã chọn",
+	"total_category": "Tổng cộng {{amount}} bản ghi",
+	"title": "Đăng ký / Quản lý danh mục khóa học",
+	"search_label": "Tên danh mục khóa học",
+	"number_of_course": "Số lượng khóa học",
+	"action": "Thao tác",
+	"message_confirm_delete": "Bạn có chắc chắn muốn xóa tất cả {{amount}} Danh mục khóa học chọn mục cùng lúc?",
+	"validate": {
+		"image_type": "Tập tin \"{{imageName}}\" không hợp lệ. Chỉ hỗ trợ loại tập tin \"image\".",
+		"image_size": "Tập tin \"{{imageName}}\" ({{imageSize}}) vượt quá kích thước giới hạn cho phép 10240 KB.",
+		"duplicate_name": "Đã tồn tại tên danh mục khóa học có cùng tên",
+		"empty_name": "Tên danh mục khóa học là mục bắt buộc.",
+		"same_category_selected": "Không thể lựa chọn danh mục giống với Danh mục khóa học",
+		"hierarchy_exceeds": "Các hệ thống phân cấp được sửa đổi vượt mức 2."
+	},
+	"message": {
+		"create_success": "Tạo danh mục khóa học thành công",
+		"edit_success": "Chỉnh sửa danh mục khóa học thành công"
+	}
+}

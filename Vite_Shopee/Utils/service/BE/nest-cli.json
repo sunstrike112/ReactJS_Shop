@@ -1,0 +1,41 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/api/src",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "@nestjs/swagger",
+        "options": {
+          "classValidatorShim": true,
+          "introspectComments": true
+        }
+      }
+    ],
+    "webpack": true,
+    "tsConfigPath": "apps/api/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/api",
+  "projects": {
+    "api": {
+      "type": "application",
+      "root": "apps/api",
+      "entryFile": "main",
+      "sourceRoot": "apps/api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api/tsconfig.app.json"
+      }
+    },
+    "system": {
+      "type": "application",
+      "root": "apps/system",
+      "entryFile": "main",
+      "sourceRoot": "apps/system/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/system/tsconfig.app.json",
+        "assets": ["/core/mail/templates/**/*"],
+        "watchAssets": true
+      }
+    }
+  }
+}

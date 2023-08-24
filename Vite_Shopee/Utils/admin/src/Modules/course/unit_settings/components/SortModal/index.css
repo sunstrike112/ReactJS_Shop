@@ -1,0 +1,24 @@
+.row-dragging {
+	background: #fafafa;
+	border: 1px solid #ccc;
+	z-index: 10;
+
+	display: flex;
+	align-items: center;
+}
+
+.row-dragging td {
+	padding: 16px;
+}
+
+.row-dragging .drag-visible {
+	visibility: visible;
+}
+
+.row-dragging .ant-table-cell-ellipsis {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	word-break: keep-all;
+	overflow-wrap: break-word;
+}

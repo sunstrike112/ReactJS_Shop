@@ -1,0 +1,15 @@
+export const LABEL_FILTERED = 'Filtered'
+export const LABEL_CLEAR_ALL = 'Clear all'
+export const LABEL_SEARCH_PLACEHOLDER = 'Search'
+export const LABEL_APPLY = 'Apply'
+export const LABEL_DRAWER_FILTER_TITLE = 'Filters'
+
+// Filters
+export const LABEL_FILTER_EQUALS = '='
+export const LABEL_FILTER_LESS = '<'
+export const LABEL_FILTER_LESS_EQUALS = '<='
+export const LABEL_FILTER_GREATER = '>'
+export const LABEL_FILTER_GREATER_EQUALS = '>='
+export const LABEL_FILTER_CONTAINS = 'Contains'
+export const LABEL_FILTER_STARTS_WITH = 'Start with'
+export const LABEL_FILTER_END_WITH = 'End with'

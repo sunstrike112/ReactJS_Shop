@@ -1,0 +1,1106 @@
+{
+    "data": [
+        {
+          "name": "Artarmon",
+          "addressLine1": "Unit 8, 43 Herbert Street",
+          "state": "NSW",
+          "postCode": "2064",
+          "suburb": "Artarmon",
+          "contactPhoneNumber": "02 8437 9599",
+          "contactEmail": "artarmon@motorserve.com.au",
+          "latitude": -33.8151628,
+          "longitude": 151.1910971,
+          "timezone": "Australia/Sydney",
+          "operatingHour": {
+            "schedule": [
+              {
+                "dayOfWeek": 1,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 2,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 3,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 4,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 5,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 6,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              },
+              {
+                "dayOfWeek": 7,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "Brookvale",
+          "addressLine1": "Unit 1A, 134-140 Old Pittwater Road",
+          "state": "NSW",
+          "postCode": "2100",
+          "suburb": "Brookvale",
+          "contactPhoneNumber": "02 9908 6699",
+          "contactEmail": "brookvale@motorserve.com.au",
+          "latitude": -33.7673713,
+          "longitude": 151.2615293,
+          "timezone": "Australia/Sydney",
+          "operatingHour": {
+            "schedule": [
+              {
+                "dayOfWeek": 1,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 2,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 3,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 4,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 5,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 6,
+                "startTime": "08:00",
+                "endTime": "12:00",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 7,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "Campbelltown",
+          "addressLine1": "2/12 Blaxland Road",
+          "state": "NSW",
+          "postCode": "2560",
+          "suburb": "Campbelltown",
+          "contactPhoneNumber": "02 4624 0599",
+          "contactEmail": "campbelltown@motorserve.com.au",
+          "latitude": -34.0551715,
+          "longitude": 150.8206443,
+          "timezone": "Australia/Sydney",
+          "operatingHour": {
+            "schedule": [
+              {
+                "dayOfWeek": 1,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 2,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 3,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 4,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 5,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 6,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              },
+              {
+                "dayOfWeek": 7,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "Caringbah",
+          "addressLine1": "7-11 Parraweena Road",
+          "state": "NSW",
+          "postCode": "2229",
+          "suburb": "Caringbah",
+          "contactPhoneNumber": "02 8578 1399",
+          "contactEmail": "caringbah@motorserve.com.au",
+          "latitude": -34.025661,
+          "longitude": 151.1289858,
+          "timezone": "Australia/Sydney",
+          "operatingHour": {
+            "schedule": [
+              {
+                "dayOfWeek": 1,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 2,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 3,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 4,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 5,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 6,
+                "startTime": "08:00",
+                "endTime": "12:00",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 7,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "Gladesville",
+          "addressLine1": "455-457 Victoria Road",
+          "state": "NSW",
+          "postCode": "2111",
+          "suburb": "Gladesville",
+          "contactPhoneNumber": "02 7909 5899",
+          "contactEmail": "gladesville@motorserve.com.au",
+          "latitude": -33.8227791,
+          "longitude": 151.12256,
+          "timezone": "Australia/Sydney",
+          "operatingHour": {
+            "schedule": [
+              {
+                "dayOfWeek": 1,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 2,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 3,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 4,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 5,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 6,
+                "startTime": "08:00",
+                "endTime": "12:00",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 7,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "Hornsby",
+          "addressLine1": "1 Hornsby Street",
+          "state": "NSW",
+          "postCode": "2077",
+          "suburb": "Hornsby",
+          "contactPhoneNumber": "02 8438 0699",
+          "contactEmail": "hornsby@motorserve.com.au",
+          "latitude": -33.7081886,
+          "longitude": 151.0991236,
+          "timezone": "Australia/Sydney",
+          "operatingHour": {
+            "schedule": [
+              {
+                "dayOfWeek": 1,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 2,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 3,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 4,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 5,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 6,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              },
+              {
+                "dayOfWeek": 7,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "Kotara",
+          "addressLine1": "Unit 3, 154 Park Avenue",
+          "state": "NSW",
+          "postCode": "2289",
+          "suburb": "Kotara",
+          "contactPhoneNumber": "02 4941 0899",
+          "contactEmail": "kotara@motorserve.com.au",
+          "latitude": -32.9410301,
+          "longitude": 151.7050139,
+          "timezone": "Australia/Sydney",
+          "operatingHour": {
+            "schedule": [
+              {
+                "dayOfWeek": 1,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 2,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 3,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 4,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 5,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 6,
+                "startTime": "08:00",
+                "endTime": "12:00",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 7,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "Liverpool",
+          "addressLine1": "46 Bathurst Street",
+          "state": "NSW",
+          "postCode": "2170",
+          "suburb": "Liverpool",
+          "contactPhoneNumber": "02 9827 8999",
+          "contactEmail": "liverpool@motorserve.com.au",
+          "latitude": -33.9211299,
+          "longitude": 150.9217248,
+          "timezone": "Australia/Sydney",
+          "operatingHour": {
+            "schedule": [
+              {
+                "dayOfWeek": 1,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 2,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 3,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 4,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 5,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 6,
+                "startTime": "08:00",
+                "endTime": "12:00",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 7,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "Majura Park",
+          "addressLine1": "3/1A Catalina Drive",
+          "state": "ACT",
+          "postCode": "2609",
+          "suburb": "Majura Park",
+          "contactPhoneNumber": "02 6160 1299",
+          "contactEmail": "majurapark@motorserve.com.au",
+          "latitude": -35.2915745,
+          "longitude": 149.1919757,
+          "timezone": "Australia/Sydney",
+          "operatingHour": {
+            "schedule": [
+              {
+                "dayOfWeek": 1,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 2,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 3,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 4,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 5,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 6,
+                "startTime": "08:00",
+                "endTime": "12:00",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 7,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "Marrickville",
+          "addressLine1": "54 Smidmore Street",
+          "state": "NSW",
+          "postCode": "2204",
+          "suburb": "Marrickville",
+          "contactPhoneNumber": "02 9336 2099",
+          "contactEmail": "marrickville@motorserve.com.au",
+          "latitude": -33.9083488,
+          "longitude": 151.1736192,
+          "timezone": "Australia/Sydney",
+          "operatingHour": {
+            "schedule": [
+              {
+                "dayOfWeek": 1,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 2,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 3,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 4,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 5,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 6,
+                "startTime": "08:00",
+                "endTime": "12:00",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 7,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "Narrabeen",
+          "addressLine1": "1408-1410 Pittwater Road",
+          "state": "NSW",
+          "postCode": "2101",
+          "suburb": "North Narrabeen",
+          "contactPhoneNumber": "02 8445 3199",
+          "contactEmail": "narrabeen@motorserve.com.au",
+          "latitude": -33.7012102,
+          "longitude": 151.2999724,
+          "timezone": "Australia/Sydney",
+          "operatingHour": {
+            "schedule": [
+              {
+                "dayOfWeek": 1,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 2,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 3,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 4,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 5,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 6,
+                "startTime": "08:00",
+                "endTime": "12:00",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 7,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "North Parramatta",
+          "addressLine1": "1B 9-11 Barney Street",
+          "state": "NSW",
+          "postCode": "2151",
+          "suburb": "North Parramatta",
+          "contactPhoneNumber": "02 9890 6299",
+          "contactEmail": "nthparramatta@motorserve.com.au",
+          "latitude": -33.7970928,
+          "longitude": 151.003137,
+          "timezone": "Australia/Sydney",
+          "operatingHour": {
+            "schedule": [
+              {
+                "dayOfWeek": 1,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 2,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 3,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 4,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 5,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 6,
+                "startTime": "08:00",
+                "endTime": "12:00",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 7,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "Padstow",
+          "addressLine1": "1 Enterprise Avenue",
+          "state": "NSW",
+          "postCode": "2211",
+          "suburb": "Padstow",
+          "contactPhoneNumber": "02 8760 4199",
+          "contactEmail": "padstow@motorserve.com.au",
+          "latitude": -33.9462963,
+          "longitude": 151.0325134,
+          "timezone": "Australia/Sydney",
+          "operatingHour": {
+            "schedule": [
+              {
+                "dayOfWeek": 1,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 2,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 3,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 4,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 5,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 6,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              },
+              {
+                "dayOfWeek": 7,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "Penrith",
+          "addressLine1": "71 Union Road",
+          "state": "NSW",
+          "postCode": "2750",
+          "suburb": "Penrith",
+          "contactPhoneNumber": "02 4749 4699",
+          "contactEmail": "penrith@motorserve.com.au",
+          "latitude": -33.7525741,
+          "longitude": 150.6894762,
+          "timezone": "Australia/Sydney",
+          "operatingHour": {
+            "schedule": [
+              {
+                "dayOfWeek": 1,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 2,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 3,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 4,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 5,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 6,
+                "startTime": "08:00",
+                "endTime": "12:00",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 7,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "Rouse Hill",
+          "addressLine1": "Unit 1, 2 Resolution Place",
+          "state": "NSW",
+          "postCode": "2155",
+          "suburb": "Rouse Hill",
+          "contactPhoneNumber": "02 8857 1699",
+          "contactEmail": "rousehill@motorserve.com.au",
+          "latitude": -33.6838909,
+          "longitude": 150.9186518,
+          "timezone": "Australia/Sydney",
+          "operatingHour": {
+            "schedule": [
+              {
+                "dayOfWeek": 1,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 2,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 3,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 4,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 5,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 6,
+                "startTime": "08:00",
+                "endTime": "12:00",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 7,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "Seven Hills",
+          "addressLine1": "Unit 1, 167 Prospect Highway",
+          "state": "NSW",
+          "postCode": "2147",
+          "suburb": "Seven Hills",
+          "contactPhoneNumber": "02 8825 9888",
+          "contactEmail": "sevenhills@motorserve.com.au",
+          "latitude": -33.7703927,
+          "longitude": 150.9405318,
+          "timezone": "Australia/Sydney",
+          "operatingHour": {
+            "schedule": [
+              {
+                "dayOfWeek": 1,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 2,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 3,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 4,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 5,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 6,
+                "startTime": "08:00",
+                "endTime": "12:00",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 7,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "South Strathfield",
+          "addressLine1": "2 Cosgrove Road",
+          "state": "NSW",
+          "postCode": "2136",
+          "suburb": "Strathfield South",
+          "contactPhoneNumber": "02 8755 7799",
+          "contactEmail": "strathfield@motorserve.com.au",
+          "latitude": -33.888123,
+          "longitude": 151.0739679,
+          "timezone": "Australia/Sydney",
+          "operatingHour": {
+            "schedule": [
+              {
+                "dayOfWeek": 1,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 2,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 3,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 4,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 5,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 6,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              },
+              {
+                "dayOfWeek": 7,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "Tuggeranong",
+          "addressLine1": "62 Athllon Drive",
+          "state": "ACT",
+          "postCode": "2900",
+          "suburb": "Greenway",
+          "contactPhoneNumber": "02 6124 8399",
+          "contactEmail": "tuggeranong@motorserve.com.au",
+          "latitude": -35.419484,
+          "longitude": 149.0657691,
+          "timezone": "Australia/Sydney",
+          "operatingHour": {
+            "schedule": [
+              {
+                "dayOfWeek": 1,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 2,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 3,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 4,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 5,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 6,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              },
+              {
+                "dayOfWeek": 7,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              }
+            ]
+          }
+        },
+        {
+          "name": "Wollongong",
+          "addressLine1": "32 Kenny Street",
+          "state": "NSW",
+          "postCode": "2500",
+          "suburb": "Wollongong",
+          "contactPhoneNumber": "02 4258 8899",
+          "contactEmail": "wollongong@motorserve.com.au",
+          "latitude": -34.4286486,
+          "longitude": 150.8913159,
+          "timezone": "Australia/Sydney",
+          "operatingHour": {
+            "schedule": [
+              {
+                "dayOfWeek": 1,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 2,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 3,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 4,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 5,
+                "startTime": "07:30",
+                "endTime": "17:30",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 6,
+                "startTime": "08:00",
+                "endTime": "12:00",
+                "isClose": false
+              },
+              {
+                "dayOfWeek": 7,
+                "startTime": "00:00",
+                "endTime": "24:00",
+                "isClose": true
+              }
+            ]
+          }
+        }
+      ]
+}

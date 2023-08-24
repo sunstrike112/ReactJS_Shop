@@ -1,0 +1,155 @@
+{
+	"title": "番組の登録",
+	"course": "チャンネル",
+	"unit": "番組",
+	"views": "回数",
+	"num_of_viewers": "視聴人数",
+	"unit_detail": "番組詳細",
+	"register_test": "テストの登録",
+	"message_complete": "修了メッセージ",
+	"estimate_study": "学習目安時間",
+	"basic_info": "基本情報",
+	"limit_start_date": "受講期間の制限(開始日時)",
+	"limit_end_date": "受講期間の制限(終了日時)",
+	"none": "なし",
+	"register_unit": "新規番組の登録",
+	"unit_settings": "Unit settings",
+	"course_name": "チャンネル名",
+	"update_order": "並び順を更新する",
+	"delete_all": "Delete all",
+	"question_confirm_amount_start": "選択された番組",
+	"question_confirm_amount_end": "件をまとめて削除しますか？",
+	"question_confirm_warning": "番組を削除すると、以下のデータの紐付けも同時に削除され、復旧できなくなります。",
+	"question_confirm_warning_first": "・その番組の受講権限(ユーザーは番組を受講できなくなります)",
+	"question_confirm_warning_second": "・その番組の受講履歴(ユーザーの学習履歴を閲覧・ダウンロードできなくなります)",
+	"unitTypeName": "番組種別",
+	"minutes": "{{ number }}分",
+	"back_test_details": "テストの詳細に戻る",
+	"report_question_list": "レポート設問一覧",
+	"filter": {
+		"no_category": "カテゴリなし",
+		"course_name": "チャンネル名"
+	},
+	"detail": {
+		"title": "テストの詳細",
+		"label_limit_start_date": "設定しない(開講日時から公開)",
+		"label_limit_end_date": "設定しない(閉講日時まで公開)",
+		"question_settings": "出題設定",
+		"option_settings": "オプション設定",
+		"number_of_question": "出題数",
+		"number_of_question_count": "{{ number }}問（登録数{{ number }}問）",
+		"passing_score": "合格点",
+		"passing_score_count": "{{ pointPass }}点/{{ totalPoint }}点満点",
+		"full_marks": "満点",
+		"set_item": "設定してください",
+		"total_allocated_points": "配点の合計点",
+		"time_limit": "制限時間",
+		"limit_number": "回数制限",
+		"back_unit_settings": "番組設定に戻る",
+		"release_since": "から公開",
+		"release_until": "まで公開",
+		"date": "日付",
+		"time": "時刻",
+		"release_since_value": "{{ time }}から公開",
+		"release_until_value": "{{ time }}まで公開",
+		"submit_deadline": "提出期限",
+		"do_not_set_deadline": "設定しない(締め切りなし)",
+		"submitted_until": "まで提出できる",
+		"submitted_until_value": "{{ time }}まで提出できる",
+		"answerTitle": "解答",
+		"isAnswerDisplay": "表示",
+		"isAnswerHidden": "非表示"
+	},
+	"basic_info_setting": {
+		"title": "基本情報の設定",
+		"confirm_change": "テストを変更してもよろしいですか？",
+		"show_answer": "解答の表示"
+	},
+	"register_test_screen": {
+		"confirm_register": "テストを登録してもよろしいですか？"
+	},
+	"validate": {
+		"duplicate_unit": "同じ名前の番組が、チャンネルにすでに存在しています。",
+		"wrong_limitEndDate": "受講期間の制限(開始日時)は、受講期間の制限(終了日時)より前にしてください。",
+		"required_limitDate": "日付を入力してください。(時刻は省略できます)",
+		"limit_time": "制限時間は'{{ time }}'より大きくてはいけません。"
+	},
+	"registration_unit_setting": {
+		"sort": {
+			"title": "並び順を更新する",
+			"index": "No.",
+			"sort": "Update",
+			"courseName": "Course name"
+		}
+	},
+	"question_setting": {
+		"title": "出題設定",
+		"test_question_category": "テスト問題カテゴリ",
+		"question_type": "問題種別",
+		"question_text": "問題文",
+		"question_code": "問題管理コード",
+		"create_question": "問題を作成する",
+		"single_choice": "単一選択",
+		"multiple_choice": "複数選択",
+		"description_choice": "記述式",
+		"point_allocation": "配点",
+		"confirm_delete": "選択された問題またはランダム出題セット 計{{ number }}件をまとめて削除しますか？",
+		"update_score_success": "合格点の変更が完了しました"
+	},
+	"create_survey": {
+		"title": "アンケートの登録",
+		"unit_survey_name": "番組",
+		"unit_survey_detail": "番組詳細",
+		"question_setting": "設問の設定",
+		"select_question": "設問を確認・変更する",
+		"create_question": "設問を作成する",
+		"confirm_register": "アンケートを登録してもよろしいですか？"
+	},
+	"edit_survey": {
+		"title": "アンケートの変更",
+		"unit_survey_name": "番組",
+		"unit_survey_detail": "番組詳細",
+		"question_setting": "設問の設定",
+		"select_question": "設問を確認・変更する",
+		"create_question": "設問を作成する",
+		"confirm_change": "アンケートを変更してもよろしいですか？"
+	},
+	"unit_survey_question": {
+		"management": {
+			"title": " アンケート設問一覧",
+			"create_question": "設問を作成する",
+			"question_text": "設問文",
+			"question_type": "設問タイプ",
+			"confirm_question": "設問を確定する",
+			"confirm_delete": "選択された設問{{number}}件をまとめて削除しますか？"
+		},
+		"create": {
+			"title": "アンケート設問の登録",
+			"back_to_list": "アンケート設問一覧に戻る",
+			"optional_or_required_answer": "回答の任意/必須",
+			"question_text": "設問文",
+			"question_type": "設問タイプ",
+			"choice": "選択肢{{index}}",
+			"warning_submit_message": "アンケートの質問を登録してもよろしいですか？"
+		},
+		"edit": {
+			"title": "アンケート設問の変更",
+			"back_to_list": "アンケート設問一覧に戻る",
+			"optional_or_required_answer": "回答の任意/必須",
+			"question_text": "設問文",
+			"question_type": "設問タイプ",
+			"choice": "選択肢{{index}}",
+			"warning_submit_message": "アンケートの質問を変更してもよろしいですか？"
+		},
+		"necessary_level_option": {
+			"optional": "任意",
+			"required": "必須"
+		},
+		"question_type_option": {
+			"single": "単一選択",
+			"multiple": "複数選択",
+			"description": "記述式"
+		}
+	},
+	"back_to_unit_setting": "番組設定に戻る"
+}
